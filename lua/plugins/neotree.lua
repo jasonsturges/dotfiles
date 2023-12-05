@@ -5,6 +5,7 @@ return {
       filtered_items = {
         visible = true,
         never_show = {
+          ".git",
           ".DS_Store",
           "thumbs.db",
         },
