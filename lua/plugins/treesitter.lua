@@ -20,6 +20,7 @@ return {
         "javascript",
         "jsdoc",
         "json",
+        "lua",
         "markdown",
         "scss",
         "sql",
