@@ -6,6 +6,9 @@ return {
     opts = function()
       return {
         transparent = true,
+        styles = {
+          sidebars = "transparent",
+        },
       }
     end,
   },
