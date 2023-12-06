@@ -9,6 +9,8 @@ return {
         styles = {
           sidebars = "transparent",
         },
+        on_colors = function(colors) end,
+        on_highlights = function(highlights, colors) end,
       }
     end,
   },
