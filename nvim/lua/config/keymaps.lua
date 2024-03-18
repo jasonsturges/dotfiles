@@ -15,8 +15,8 @@ map("n", "<C-l>", "<C-w>l", { desc = "Go to right window", remap = true })
 map("n", "<C-Up>", "<cmd>resize +2<cr>", { desc = "Increase window height" })
 map("n", "<C-Down>", "<cmd>resize -2<cr>", { desc = "Decrease window height" })
 map("n", "<C-Left>", "<cmd>vertical resize -2<cr>", { desc = "Decrease window width" })
-
 map("n", "<C-Right>", "<cmd>vertical resize +2<cr>", { desc = "Increase window width" })
+
 -- Move Lines
 map("n", "<D-j>", "<cmd>m .+1<cr>==", { desc = "Move down" })
 map("n", "<D-k>", "<cmd>m .-2<cr>==", { desc = "Move up" })
