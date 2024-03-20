@@ -78,14 +78,26 @@ Leader key: <kbd>Spacebar</kbd>
 
 #### Editing
 
-| Mode | Input                                       | Action         |
-| :--- | :------------------------------------------ | :------------- |
-| inv  | <kbd>OPTION</kbd> <kbd>j</kbd>              | Move line down |
-| inv  | <kbd>OPTION</kbd> <kbd>k</kbd>              | Move line up   |
-| inxs | <kbd>CONTROL</kbd> <kbd>s</kbd>             | Save file      |
-| v    | <kbd>&gt;</kbd>                             | Indent         |
-| v    | <kbd>&lt;</kbd>                             | Outdent        |
-| nv   | <kbd>leader</kbd> <kbd>c</kbd> <kbd>f</kbd> | Format         |
+| Mode | Input                                       | Action                                       |
+| :--- | :------------------------------------------ | :------------------------------------------- |
+| n    | <kbd>i</kbd>                                | Insert text before the cursor                |
+| n    | <kbd>SHIFT</kbd> <kbd>I</kbd>               | Insert text before first non-blank character |
+| n    | <kbd>a</kbd>                                | Append text after the cursor                 |
+| n    | <kbd>SHIFT</kbd> <kbd>A</kbd>               | Append text at end of line                   |
+| n    | <kbd>o</kbd>                                | New line below the current line              |
+| n    | <kbd>SHIFT</kbd> <kbd>O</kbd>               | New line above the current line              |
+| n    | <kbd>x</kbd>                                | Delete character                             |
+| n    | <kbd>d</kbd> <kbd>w</kbd>                   | Delete word                                  |
+| n    | <kbd>d</kbd> <kbd>d</kbd>                   | Delete current line                          |
+| n    | <kbd>u</kbd>                                | Undo                                         |
+| n    | <kbd>CONTROL</kbd> <kbd>r</kbd>             | Redo                                         |
+| inv  | <kbd>OPTION</kbd> <kbd>j</kbd>              | Move line down                               |
+| inv  | <kbd>OPTION</kbd> <kbd>k</kbd>              | Move line up                                 |
+| inxs | <kbd>CONTROL</kbd> <kbd>c</kbd>             | Exit insert mode                             |
+| inxs | <kbd>CONTROL</kbd> <kbd>s</kbd>             | Save file                                    |
+| v    | <kbd>&gt;</kbd>                             | Indent                                       |
+| v    | <kbd>&lt;</kbd>                             | Outdent                                      |
+| nv   | <kbd>leader</kbd> <kbd>c</kbd> <kbd>f</kbd> | Format                                       |
 
 #### Selecting
 
@@ -101,8 +113,31 @@ Leader key: <kbd>Spacebar</kbd>
 | v | <kbd>v</kbd> <kbd>a</kbd> <kbd>"</kbd> | Visual outer quotes (select everything including `"` quotes) |
 | v | <kbd>v</kbd> <kbd>a</kbd> <kbd>{</kbd> | Visual outer braces (select everything including `{}` braces) |
 | v | <kbd>v</kbd> <kbd>a</kbd> <kbd>[</kbd> | Visual outer brackets (select everything including `[]` brackets) |
-| nv | <kbd>y</kbd> <kbd>i</kbd> <kbd>w</kbd> | Yank inner word (copy word) |
-| nv | <kbd>d</kbd> <kbd>i</kbd> <kbd>w</kbd> | Delete inner word (delete word) |
+
+
+#### Copying and moving text
+
+| Mode | Input                                  | Action                                                                               |
+| :--- | :------------------------------------- | :----------------------------------------------------------------------------------- |
+| nv   | <kbd>y</kbd>                           | Yank into register (copy)                                                            |
+| nv   | <kbd>y</kbd> <kbd>y</kbd>              | Yank current line into register (copy, also mapped as <kbd>SHIFT</kbd> <kbd>Y</kbd>) |
+| nv   | <kbd>y</kbd> <kbd>$</kbd>              | Yank from cursor to end of line register (copy)                                      |
+| nv   | <kbd>y</kbd> <kbd>^</kbd>              | Yank from cursor to first non-blank character of line (copy)                         |
+| nv   | <kbd>d</kbd>                           | Delete (cut)                                                                         |
+| nv   | <kbd>d</kbd> <kbd>d</kbd>              | Delete current line (cut)                                                            |
+| nv   | <kbd>p</kbd>                           | Put register after cursor (paste)                                                    |
+| nv   | <kbd>SHIFT</kbd> <kbd>P</kbd>          | Put register before cursor (paste)                                                   |
+| nv   | <kbd>y</kbd> <kbd>i</kbd> <kbd>w</kbd> | Yank inner word (copy word)                                                          |
+| nv   | <kbd>d</kbd> <kbd>i</kbd> <kbd>w</kbd> | Delete inner word (delete word)                                                      |
+
+
+#### Searching: Telescope
+
+| Mode | Input                                       | Action                                    |
+| :--- | :------------------------------------------ | :---------------------------------------- |
+| n    | <kbd>leader</kbd> <kbd>SPACE</kbd>          | Find files from root directory            |
+| n    | <kbd>leader</kbd> <kbd>f</kbd> <kbd>F</kbd> | Find files from current working directory |
+| n    | <kbd>leader</kbd> <kbd>/</kbd>              | Live grep: search in all files            |
 
 #### Errors
 
@@ -134,11 +169,3 @@ Leader key: <kbd>Spacebar</kbd>
 | n    | <kbd>d</kbd>                   | Delete file                             |
 | n    | <kbd>SHIFT</kbd> <kbd>P</kbd>  | Preview file                            |
 | n    | <kbd>?</kbd>                   | Help                                    |
-
-#### Searching: Telescope
-
-| Mode | Input                                       | Action                                    |
-| :--- | :------------------------------------------ | :---------------------------------------- |
-| n    | <kbd>leader</kbd> <kbd>SPACE</kbd>          | Find files from root directory            |
-| n    | <kbd>leader</kbd> <kbd>f</kbd> <kbd>F</kbd> | Find files from current working directory |
-| n    | <kbd>leader</kbd> <kbd>/</kbd>              | Live grep: search in all files            |
