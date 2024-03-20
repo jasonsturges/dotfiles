@@ -44,28 +44,37 @@ Leader key: <kbd>Spacebar</kbd>
 
 #### Movement
 
-| Mode | Input                                  | Action                                                                |
-| :--- | :------------------------------------- | :-------------------------------------------------------------------- |
-| nv   | <kbd>h</kbd>                           | Move left                                                             |
-| nv   | <kbd>j</kbd>                           | Move down                                                             |
-| nv   | <kbd>k</kbd>                           | Move up                                                               |
-| nv   | <kbd>l</kbd>                           | Move right                                                            |
-| nv   | <kbd>b</kbd>                           | Previous word                                                         |
-| nv   | <kbd>w</kbd>                           | Next word                                                             |
-| nv   | <kbd>e</kbd>                           | Next end of word                                                      |
-| nv   | <kbd>0</kbd>                           | First character in line                                               |
-| nv   | <kbd>^</kbd>                           | First non-blank character in line                                     |
-| nv   | <kbd>$</kbd>                           | End of line                                                           |
-| nv   | <kbd>g</kbd> <kbd>M</kbd>              | Goto middle of line                                                   |
-| nv   | <kbd>g</kbd> <kbd>g</kbd>              | Goto first line, beginning of document                                |
-| nv   | <kbd>G</kbd>                           | Goto last line, end of document                                       |
-| nv   | <kbd>[number]</kbd> <kbd>gg</kbd>      | Goto line _number_ (also works with <kbd>[number]</kbd> <kbd>G</kbd>) |
-| nv   | <kbd>[number]</kbd> <kbd>%</kbd>       | Goto line at _number_ percentage (as in `25%`, `50%`, or `100%`)      |
-| nv   | <kbd>{</kbd>                           | Previous empty line                                                   |
-| nv   | <kbd>}</kbd>                           | Next empty line                                                       |
-| inv  | <kbd>SHIFT</kbd> <kbd>Up-Arrow</kbd>   | One screenful backword (page up)                                      |
-| inv  | <kbd>SHIFT</kbd> <kbd>Down-Arrow</kbd> | One screenful forward (page down)                                     |
-| nv   | <kbd>SHIFT</kbd> <kbd>Down-Arrow</kbd> | Scroll cursor middle of window                                        |
+| Mode | Input                             | Action                                                                |
+| :--- | :-------------------------------- | :-------------------------------------------------------------------- |
+| nv   | <kbd>h</kbd>                      | Move left                                                             |
+| nv   | <kbd>j</kbd>                      | Move down                                                             |
+| nv   | <kbd>k</kbd>                      | Move up                                                               |
+| nv   | <kbd>l</kbd>                      | Move right                                                            |
+| nv   | <kbd>b</kbd>                      | Previous word                                                         |
+| nv   | <kbd>w</kbd>                      | Next word                                                             |
+| nv   | <kbd>e</kbd>                      | Next end of word                                                      |
+| nv   | <kbd>0</kbd>                      | First character in line                                               |
+| nv   | <kbd>^</kbd>                      | First non-blank character in line                                     |
+| nv   | <kbd>$</kbd>                      | End of line                                                           |
+| nv   | <kbd>g</kbd> <kbd>M</kbd>         | Goto middle of line                                                   |
+| nv   | <kbd>g</kbd> <kbd>g</kbd>         | Goto first line, beginning of document                                |
+| nv   | <kbd>G</kbd>                      | Goto last line, end of document                                       |
+| nv   | <kbd>[number]</kbd> <kbd>gg</kbd> | Goto line _number_ (also works with <kbd>[number]</kbd> <kbd>G</kbd>) |
+| nv   | <kbd>[number]</kbd> <kbd>%</kbd>  | Goto line at _number_ percentage (as in `25%`, `50%`, or `100%`)      |
+| nv   | <kbd>{</kbd>                      | Previous empty line                                                   |
+| nv   | <kbd>}</kbd>                      | Next empty line                                                       |
+
+#### Scrolling
+
+| Mode | Input                                  | Action                                         |
+| :--- | :------------------------------------- | :--------------------------------------------- |
+| inv  | <kbd>SHIFT</kbd> <kbd>Up-Arrow</kbd>   | Move one screenful backword (page up)          |
+| inv  | <kbd>SHIFT</kbd> <kbd>Down-Arrow</kbd> | Move one screenful forward (page down)         |
+| nv   | <kbd>z</kbd> <kbd>t</kbd>              | Redraw current line at top of window           |
+| nv   | <kbd>z</kbd> <kbd>z</kbd>              | Redraw current line at center of window        |
+| nv   | <kbd>z</kbd> <kbd>b</kbd>              | Redraw current line at bottom of window        |
+| nv   | <kbd>z</kbd> <kbd>H</kbd>              | Scroll screen half a screen width to the right |
+| nv   | <kbd>z</kbd> <kbd>L</kbd>              | Scroll screen half a screen width to the left  |
 
 #### Editing
 
