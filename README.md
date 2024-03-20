@@ -70,6 +70,7 @@ Leader key: <kbd>Spacebar</kbd>
 | n    | <kbd>g</kbd> <kbd>d</kbd>         | Goto definition                                                       |
 | n    | <kbd>g</kbd> <kbd>D</kbd>         | Goto declaration                                                      |
 | n    | <kbd>g</kbd> <kbd>I</kbd>         | Goto implementation                                                   |
+| n    | <kbd>g</kbd> <kbd>y</kbd>         | Goto type definition                                                  |
 
 #### Scrolling
 
@@ -120,13 +121,16 @@ Leader key: <kbd>Spacebar</kbd>
 | v    | <kbd>v</kbd>                                        | Enter visual mode, followed by vim movement (examples: `v$`, `v^`, or `v8j`) |
 | v    | <kbd>SHIFT</kbd> <kbd>V</kbd>                       | Select line                                                       |
 | v    | <kbd>g</kbd> <kbd>g</kbd> <kbd>V</kbd> <kbd>G</kbd> | Select all                                                        |
-| v    | <kbd>v</kbd> <kbd>i</kbd> <kbd>w</kbd>              | Visual inner word (select word)                                   |
-| v    | <kbd>v</kbd> <kbd>i</kbd> <kbd>"</kbd>              | Visual inner quotes (select everything inside of `"` quotes)      |
-| v    | <kbd>v</kbd> <kbd>i</kbd> <kbd>{</kbd>              | Visual inner braces (select everything inside of `{}` braces)     |
-| v    | <kbd>v</kbd> <kbd>i</kbd> <kbd>[</kbd>              | Visual inner brackets (select everything inside of `[]` brackets) |
-| v    | <kbd>v</kbd> <kbd>a</kbd> <kbd>"</kbd>              | Visual outer quotes (select everything including `"` quotes)      |
-| v    | <kbd>v</kbd> <kbd>a</kbd> <kbd>{</kbd>              | Visual outer braces (select everything including `{}` braces)     |
-| v    | <kbd>v</kbd> <kbd>a</kbd> <kbd>[</kbd>              | Visual outer brackets (select everything including `[]` brackets) |
+| v    | <kbd>v</kbd> <kbd>i</kbd> <kbd>w</kbd>              | Inner word (select word)                                          |
+| v    | <kbd>v</kbd> <kbd>i</kbd> <kbd>b</kbd>              | Inner block (select block)                                        |
+| v    | <kbd>v</kbd> <kbd>i</kbd> <kbd>"</kbd>              | Inner quotes (select everything inside of `"` quotes)             |
+| v    | <kbd>v</kbd> <kbd>i</kbd> <kbd>{</kbd>              | Inner braces (select everything inside of `{}` braces)            |
+| v    | <kbd>v</kbd> <kbd>i</kbd> <kbd>[</kbd>              | Inner brackets (select everything inside of `[]` brackets)        |
+| v    | <kbd>v</kbd> <kbd>a</kbd> <kbd>w</kbd>              | Outer word (select word)                                          |
+| v    | <kbd>v</kbd> <kbd>a</kbd> <kbd>b</kbd>              | Outer block (select block)                                        |
+| v    | <kbd>v</kbd> <kbd>a</kbd> <kbd>"</kbd>              | Outer quotes (select everything including `"` quotes)             |
+| v    | <kbd>v</kbd> <kbd>a</kbd> <kbd>{</kbd>              | Outer braces (select everything including `{}` braces)            |
+| v    | <kbd>v</kbd> <kbd>a</kbd> <kbd>[</kbd>              | Outer brackets (select everything including `[]` brackets)        |
 
 #### Copying and moving text
 
@@ -144,6 +148,7 @@ Leader key: <kbd>Spacebar</kbd>
 | nv   | <kbd>d</kbd> <kbd>i</kbd> <kbd>w</kbd> | Delete inner word (delete word)                                                      |
 
 #### Searching
+
 | Mode | Input                                       | Action                                                   |
 | :--- | :------------------------------------------ | :------------------------------------------------------- |
 | n    | <kbd>\*</kbd>                               | Search forward for the identifier under the cursor       |
@@ -154,6 +159,19 @@ Leader key: <kbd>Spacebar</kbd>
 | n    | <kbd>leader</kbd> <kbd>f</kbd> <kbd>F</kbd> | Find files from current working directory                |
 | n    | <kbd>leader</kbd> <kbd>/</kbd>              | Live grep: search in all files                           |
 | n    | <kbd>s</kbd>                                | Flash: search window, use labels to jump to any location |
+
+#### Code Folding
+
+| Mode | Input                     | Action                           |
+| :--- | :------------------------ | :------------------------------- |
+| n    | <kbd>z</kbd> <kbd>c</kbd> | Close one fold under the cursor  |
+| n    | <kbd>z</kbd> <kbd>C</kbd> | Close all folds under the cursor |
+| n    | <kbd>z</kbd> <kbd>m</kbd> | Fold more                        |
+| n    | <kbd>z</kbd> <kbd>M</kbd> | Close all folds                  |
+| n    | <kbd>z</kbd> <kbd>o</kbd> | Open one fold under the cursor   |
+| n    | <kbd>z</kbd> <kbd>O</kbd> | Open all folds under the cursor  |
+| n    | <kbd>z</kbd> <kbd>r</kbd> | Reduce folding                   |
+| n    | <kbd>z</kbd> <kbd>R</kbd> | Open all folds                   |
 
 #### File Explorer: Neo-tree
 
@@ -186,3 +204,20 @@ Leader key: <kbd>Spacebar</kbd>
 | :--- | :------------------------------------------ | :----------------- |
 | n    | <kbd>leader</kbd> <kbd>g</kbd> <kbd>g</kbd> | Git                |
 | n    | <kbd>leader</kbd> <kbd>g</kbd> <kbd>c</kbd> | Git commit history |
+
+#### Information
+
+| Mode | Input                                        | Action                                                      |
+| :--- | :------------------------------------------- | :---------------------------------------------------------- |
+| n    | <kbd>CTRL</kbd> <kbd>g</kbd>                 | Show current file name with path                            |
+| n    | <kbd>g</kbd> <kbd>a</kbd>                    | Show ascii value of character under cursor                  |
+| n    | <kbd>g</kbd> <kbd>8</kbd>                    | Show utf-8 encoding byte sequence of character under cursor |
+| n    | <kbd>g</kbd> <kbd>CONTROL</kbd> <kbd>G</kbd> | Show cursor column, line, word, and byte position           |
+
+#### Command line
+
+| Input                           | Action                                         |
+| :------------------------------ | :--------------------------------------------- |
+| <kbd>CONTROL</kbd> <kbd>u</kbd> | Remove all characters (clear the command line) |
+| <kbd>CONTROL</kbd> <kbd>w</kbd> | Delete word in front of the cursor             |
+| <kbd>CONTROL</kbd> <kbd>k</kbd> | Enter digraph                                  |
