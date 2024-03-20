@@ -1,18 +1,24 @@
-## Keybindings
+# dotfiles
+
+Personal dotfiles of development environment
+
+## Neovim
+
+Vim-based text editor.
+
+### Keybindings
 
 Leader key: <kbd>Spacebar</kbd>
 
-#### Neovim
-
-| Mode | Input                                       | Action   |
-| :--- | :------------------------------------------ | :------- |
-| n    | <kbd>leader</kbd> <kbd>q</kbd> <kbd>q</kbd> | Quit all |
-
 #### Lazy
 
-| Mode | Input                          | Action |
-| :--- | :----------------------------- | :----- |
-| n    | <kbd>leader</kbd> <kbd>l</kbd> | Lazy   |
+| Mode | Input                                       | Action                                           |
+| :--- | :------------------------------------------ | :----------------------------------------------- |
+| n    | <kbd>leader</kbd> <kbd>q</kbd> <kbd>q</kbd> | Quit all                                         |
+| n    | <kbd>leader</kbd> <kbd>l</kbd>              | Lazy                                             |
+| n    | <kbd>leader</kbd> <kbd>c</kbd> <kbd>m</kbd> | Mason: Language servers, linters, and formatters |
+| n    | <kbd>leader</kbd> <kbd>s</kbd> <kbd>h</kbd> | Search Help                                      |
+| n    | <kbd>leader</kbd> <kbd>s</kbd> <kbd>k</kbd> | Search Keymaps                                   |
 
 #### Windows
 
@@ -22,19 +28,20 @@ Leader key: <kbd>Spacebar</kbd>
 | n    | <kbd>leader</kbd> <kbd>\|</kbd>             | Split window vertical   |
 | n    | <kbd>leader</kbd> <kbd>w</kbd> <kbd>d</kbd> | Delete window           |
 | n    | <kbd>leader</kbd> <kbd>w</kbd> <kbd>w</kbd> | Other window            |
-| n    | <kbd>CTRL</kbd> <kbd>h</kbd>                | Go to left window       |
-| n    | <kbd>CTRL</kbd> <kbd>j</kbd>                | Go to lower window      |
-| n    | <kbd>CTRL</kbd> <kbd>k</kbd>                | Go to upper window      |
-| n    | <kbd>CTRL</kbd> <kbd>l</kbd>                | Go to right window      |
+| n    | <kbd>CONTROL</kbd> <kbd>h</kbd>             | Go to left window       |
+| n    | <kbd>CONTROL</kbd> <kbd>j</kbd>             | Go to lower window      |
+| n    | <kbd>CONTROL</kbd> <kbd>k</kbd>             | Go to upper window      |
+| n    | <kbd>CONTROL</kbd> <kbd>l</kbd>             | Go to right window      |
 
 #### Buffers
 
-| Mode | Input                           | Action                 |
-| :--- | :------------------------------ | :--------------------- |
-| n    | <kbd>CONTROL</kbd> <kbd>h</kbd> | Previous buffer (left) |
-| n    | <kbd>CONTROL</kbd> <kbd>l</kbd> | Next buffer (right)    |
+| Mode | Input                                       | Action                 |
+| :--- | :------------------------------------------ | :--------------------- |
+| n    | <kbd>SHIFT</kbd> <kbd>H</kbd>               | Previous buffer (left) |
+| n    | <kbd>SHIFT</kbd> <kbd>l</kbd>               | Next buffer (right)    |
+| n    | <kbd>leader</kbd> <kbd>b</kbd> <kbd>d</kbd> | Close buffer           |
 
-### Editing
+#### Editing
 
 | Mode | Input                                       | Action         |
 | :--- | :------------------------------------------ | :------------- |
@@ -45,13 +52,13 @@ Leader key: <kbd>Spacebar</kbd>
 | v    | <kbd>&lt;</kbd>                             | Outdent        |
 | nv   | <kbd>leader</kbd> <kbd>c</kbd> <kbd>f</kbd> | Format         |
 
-Errors
+### Errors
 
 | Mode | Input                                       | Action        |
 | :--- | :------------------------------------------ | :------------ |
 | n    | <kbd>leader</kbd> <kbd>x</kbd> <kbd>q</kbd> | Quickfix list |
 
-Git
+### Git
 
 | Mode | Input                                       | Action |
 | :--- | :------------------------------------------ | :----- |
