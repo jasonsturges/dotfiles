@@ -22,6 +22,7 @@ Leader key: <kbd>Spacebar</kbd>
 | n    | <kbd>leader</kbd> <kbd>e</kbd>              | Neo-tree: File system tree sidebar               |
 | n    | <kbd>leader</kbd> <kbd>g</kbd> <kbd>e</kbd> | Lazygit: Terminal UI for git commands            |
 | n    | <kbd>leader</kbd> <kbd>c</kbd> <kbd>s</kbd> | Aerial: Code outline                             |
+| n    | <kbd>leader</kbd> <kbd>s</kbd> <kbd>r</kbd> | Spectre: Search and reaplace                     |
 | n    | <kbd>leader</kbd> <kbd>s</kbd> <kbd>h</kbd> | Search Help                                      |
 | n    | <kbd>leader</kbd> <kbd>s</kbd> <kbd>k</kbd> | Search Keymaps                                   |
 
