@@ -116,21 +116,21 @@ Leader key: <kbd>Spacebar</kbd>
 
 #### Selecting
 
-| Mode | Input                                               | Action                                                            |
-| :--- | :-------------------------------------------------- | :---------------------------------------------------------------- |
+| Mode | Input                                               | Action                                                                       |
+| :--- | :-------------------------------------------------- | :--------------------------------------------------------------------------- |
 | v    | <kbd>v</kbd>                                        | Enter visual mode, followed by vim movement (examples: `v$`, `v^`, or `v8j`) |
-| v    | <kbd>SHIFT</kbd> <kbd>V</kbd>                       | Select line                                                       |
-| v    | <kbd>g</kbd> <kbd>g</kbd> <kbd>V</kbd> <kbd>G</kbd> | Select all                                                        |
-| v    | <kbd>v</kbd> <kbd>i</kbd> <kbd>w</kbd>              | Inner word (select word)                                          |
-| v    | <kbd>v</kbd> <kbd>i</kbd> <kbd>b</kbd>              | Inner block (select block)                                        |
-| v    | <kbd>v</kbd> <kbd>i</kbd> <kbd>"</kbd>              | Inner quotes (select everything inside of `"` quotes)             |
-| v    | <kbd>v</kbd> <kbd>i</kbd> <kbd>{</kbd>              | Inner braces (select everything inside of `{}` braces)            |
-| v    | <kbd>v</kbd> <kbd>i</kbd> <kbd>[</kbd>              | Inner brackets (select everything inside of `[]` brackets)        |
-| v    | <kbd>v</kbd> <kbd>a</kbd> <kbd>w</kbd>              | Outer word (select word)                                          |
-| v    | <kbd>v</kbd> <kbd>a</kbd> <kbd>b</kbd>              | Outer block (select block)                                        |
-| v    | <kbd>v</kbd> <kbd>a</kbd> <kbd>"</kbd>              | Outer quotes (select everything including `"` quotes)             |
-| v    | <kbd>v</kbd> <kbd>a</kbd> <kbd>{</kbd>              | Outer braces (select everything including `{}` braces)            |
-| v    | <kbd>v</kbd> <kbd>a</kbd> <kbd>[</kbd>              | Outer brackets (select everything including `[]` brackets)        |
+| v    | <kbd>SHIFT</kbd> <kbd>V</kbd>                       | Select line                                                                  |
+| v    | <kbd>g</kbd> <kbd>g</kbd> <kbd>V</kbd> <kbd>G</kbd> | Select all                                                                   |
+| v    | <kbd>v</kbd> <kbd>i</kbd> <kbd>w</kbd>              | Inner word (select word)                                                     |
+| v    | <kbd>v</kbd> <kbd>i</kbd> <kbd>b</kbd>              | Inner block (select block)                                                   |
+| v    | <kbd>v</kbd> <kbd>i</kbd> <kbd>"</kbd>              | Inner quotes (select everything inside of `"` quotes)                        |
+| v    | <kbd>v</kbd> <kbd>i</kbd> <kbd>{</kbd>              | Inner braces (select everything inside of `{}` braces)                       |
+| v    | <kbd>v</kbd> <kbd>i</kbd> <kbd>[</kbd>              | Inner brackets (select everything inside of `[]` brackets)                   |
+| v    | <kbd>v</kbd> <kbd>a</kbd> <kbd>w</kbd>              | Outer word (select word)                                                     |
+| v    | <kbd>v</kbd> <kbd>a</kbd> <kbd>b</kbd>              | Outer block (select block)                                                   |
+| v    | <kbd>v</kbd> <kbd>a</kbd> <kbd>"</kbd>              | Outer quotes (select everything including `"` quotes)                        |
+| v    | <kbd>v</kbd> <kbd>a</kbd> <kbd>{</kbd>              | Outer braces (select everything including `{}` braces)                       |
+| v    | <kbd>v</kbd> <kbd>a</kbd> <kbd>[</kbd>              | Outer brackets (select everything including `[]` brackets)                   |
 
 #### Copying and moving text
 
