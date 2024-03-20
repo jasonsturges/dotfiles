@@ -47,30 +47,30 @@ Leader key: <kbd>Spacebar</kbd>
 
 #### Movement
 
-| Mode | Input                             | Action                                                                |
-| :--- | :-------------------------------- | :-------------------------------------------------------------------- |
-| nv   | <kbd>h</kbd>                      | Move left                                                             |
-| nv   | <kbd>j</kbd>                      | Move down                                                             |
-| nv   | <kbd>k</kbd>                      | Move up                                                               |
-| nv   | <kbd>l</kbd>                      | Move right                                                            |
-| nv   | <kbd>b</kbd>                      | Previous word                                                         |
-| nv   | <kbd>w</kbd>                      | Next word                                                             |
-| nv   | <kbd>e</kbd>                      | Next end of word                                                      |
-| nv   | <kbd>0</kbd>                      | First character in line                                               |
-| nv   | <kbd>^</kbd>                      | First non-blank character in line                                     |
-| nv   | <kbd>$</kbd>                      | End of line                                                           |
-| nv   | <kbd>{</kbd>                      | Previous empty line                                                   |
-| nv   | <kbd>}</kbd>                      | Next empty line                                                       |
-| nv   | <kbd>%</kbd>                      | Find next brace or bracket on the current line, and go to its match   |
-| nv   | <kbd>g</kbd> <kbd>M</kbd>         | Goto middle of line                                                   |
-| nv   | <kbd>g</kbd> <kbd>g</kbd>         | Goto first line, beginning of document                                |
-| nv   | <kbd>G</kbd>                      | Goto last line, end of document                                       |
-| nv   | <kbd>[number]</kbd> <kbd>gg</kbd> | Goto line _number_ (also works with <kbd>[number]</kbd> <kbd>G</kbd>) |
-| nv   | <kbd>[number]</kbd> <kbd>%</kbd>  | Goto line at _number_ percentage (as in `25%`, `50%`, or `100%`)      |
-| n    | <kbd>g</kbd> <kbd>d</kbd>         | Goto definition                                                       |
-| n    | <kbd>g</kbd> <kbd>D</kbd>         | Goto declaration                                                      |
-| n    | <kbd>g</kbd> <kbd>I</kbd>         | Goto implementation                                                   |
-| n    | <kbd>g</kbd> <kbd>y</kbd>         | Goto type definition                                                  |
+| Mode | Input                                         | Action                                                                |
+| :--- | :-------------------------------------------- | :-------------------------------------------------------------------- |
+| nv   | <kbd>h</kbd>                                  | Move left                                                             |
+| nv   | <kbd>j</kbd>                                  | Move down                                                             |
+| nv   | <kbd>k</kbd>                                  | Move up                                                               |
+| nv   | <kbd>l</kbd>                                  | Move right                                                            |
+| nv   | <kbd>b</kbd>                                  | Previous word                                                         |
+| nv   | <kbd>w</kbd>                                  | Next word                                                             |
+| nv   | <kbd>e</kbd>                                  | Next end of word                                                      |
+| nv   | <kbd>0</kbd>                                  | First character in line                                               |
+| nv   | <kbd>^</kbd>                                  | First non-blank character in line                                     |
+| nv   | <kbd>$</kbd>                                  | End of line                                                           |
+| nv   | <kbd>{</kbd>                                  | Previous empty line                                                   |
+| nv   | <kbd>}</kbd>                                  | Next empty line                                                       |
+| nv   | <kbd>%</kbd>                                  | Find next brace or bracket on the current line, and go to its match   |
+| nv   | <kbd>g</kbd> <kbd>M</kbd>                     | Goto middle of line                                                   |
+| nv   | <kbd>g</kbd> <kbd>g</kbd>                     | Goto first line, beginning of document                                |
+| nv   | <kbd>G</kbd>                                  | Goto last line, end of document                                       |
+| nv   | <kbd>[number]</kbd> <kbd>g</kbd> <kbd>g</kbd> | Goto line _number_ (also works with <kbd>[number]</kbd> <kbd>G</kbd>) |
+| nv   | <kbd>[number]</kbd> <kbd>%</kbd>              | Goto line at _number_ percentage (as in `25%`, `50%`, or `100%`)      |
+| n    | <kbd>g</kbd> <kbd>d</kbd>                     | Goto definition                                                       |
+| n    | <kbd>g</kbd> <kbd>D</kbd>                     | Goto declaration                                                      |
+| n    | <kbd>g</kbd> <kbd>I</kbd>                     | Goto implementation                                                   |
+| n    | <kbd>g</kbd> <kbd>y</kbd>                     | Goto type definition                                                  |
 
 #### Scrolling
 
