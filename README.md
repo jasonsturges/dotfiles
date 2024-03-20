@@ -20,6 +20,7 @@ Leader key: <kbd>Spacebar</kbd>
 | n    | <kbd>leader</kbd> <kbd>l</kbd>              | Lazy                                             |
 | n    | <kbd>leader</kbd> <kbd>c</kbd> <kbd>m</kbd> | Mason: Language servers, linters, and formatters |
 | n    | <kbd>leader</kbd> <kbd>e</kbd>              | Neo-tree: File system tree sidebar               |
+| n    | <kbd>leader</kbd> <kbd>g</kbd> <kbd>e</kbd> | Lazygit: Terminal UI for git commands            |
 | n    | <kbd>leader</kbd> <kbd>s</kbd> <kbd>h</kbd> | Search Help                                      |
 | n    | <kbd>leader</kbd> <kbd>s</kbd> <kbd>k</kbd> | Search Keymaps                                   |
 
@@ -60,6 +61,7 @@ Leader key: <kbd>Spacebar</kbd>
 | nv   | <kbd>$</kbd>                      | End of line                                                           |
 | nv   | <kbd>{</kbd>                      | Previous empty line                                                   |
 | nv   | <kbd>}</kbd>                      | Next empty line                                                       |
+| nv   | <kbd>%</kbd>                      | Find next brace or bracket on the current line, and go to its match   |
 | nv   | <kbd>g</kbd> <kbd>M</kbd>         | Goto middle of line                                                   |
 | nv   | <kbd>g</kbd> <kbd>g</kbd>         | Goto first line, beginning of document                                |
 | nv   | <kbd>G</kbd>                      | Goto last line, end of document                                       |
@@ -93,11 +95,15 @@ Leader key: <kbd>Spacebar</kbd>
 | n    | <kbd>SHIFT</kbd> <kbd>O</kbd>               | New line above the current line                                  |
 | n    | <kbd>x</kbd>                                | Delete character                                                 |
 | n    | <kbd>d</kbd> <kbd>w</kbd>                   | Delete word                                                      |
+| n    | <kbd>SHIFT</kbd> <kbd>D</kbd>               | Delete to end of line                                            |
 | n    | <kbd>d</kbd> <kbd>d</kbd>                   | Delete current line                                              |
+| n    | <kbd>r</kbd>                                | Replace character                                                |
+| n    | <kbd>R</kbd>                                | Replace mode                                                     |
 | n    | <kbd>u</kbd>                                | Undo                                                             |
 | n    | <kbd>CONTROL</kbd> <kbd>r</kbd>             | Redo                                                             |
 | inv  | <kbd>OPTION</kbd> <kbd>j</kbd>              | Move line down                                                   |
 | inv  | <kbd>OPTION</kbd> <kbd>k</kbd>              | Move line up                                                     |
+| nv   | <kbd>SHIFT</kbd> <kbd>J</kbd>               | Join lines (with next line, or highlighted lines)                |
 | v    | <kbd>g</kbd> <kbd>c</kbd>                   | Comment (multiple lines with _number_ <kbd>g</kbd> <kbd>c</kbd>) |
 | v    | <kbd>&gt;</kbd>                             | Indent                                                           |
 | v    | <kbd>&lt;</kbd>                             | Outdent                                                          |
@@ -109,19 +115,18 @@ Leader key: <kbd>Spacebar</kbd>
 
 #### Selecting
 
-| Mode | Input | Action |
-| :-- | :-- | :-- |
-| v | <kbd>v</kbd> | Enter visual mode, followed by vim movement (examples: `v$`, `v^`, or `v8j`) |
-| v | <kbd>SHIFT</kbd> <kbd>V</kbd> | Select line |
-| v | <kbd>g</kbd> <kbd>g</kbd> <kbd>V</kbd> <kbd>G</kbd> | Select all |
-| v | <kbd>v</kbd> <kbd>i</kbd> <kbd>w</kbd> | Visual inner word (select word) |
-| v | <kbd>v</kbd> <kbd>i</kbd> <kbd>"</kbd> | Visual inner quotes (select everything inside of `"` quotes) |
-| v | <kbd>v</kbd> <kbd>i</kbd> <kbd>{</kbd> | Visual inner braces (select everything inside of `{}` braces) |
-| v | <kbd>v</kbd> <kbd>i</kbd> <kbd>[</kbd> | Visual inner brackets (select everything inside of `[]` brackets) |
-| v | <kbd>v</kbd> <kbd>a</kbd> <kbd>"</kbd> | Visual outer quotes (select everything including `"` quotes) |
-| v | <kbd>v</kbd> <kbd>a</kbd> <kbd>{</kbd> | Visual outer braces (select everything including `{}` braces) |
-| v | <kbd>v</kbd> <kbd>a</kbd> <kbd>[</kbd> | Visual outer brackets (select everything including `[]` brackets) |
-
+| Mode | Input                                               | Action                                                            |
+| :--- | :-------------------------------------------------- | :---------------------------------------------------------------- |
+| v    | <kbd>v</kbd>                                        | Enter visual mode, followed by vim movement (examples: `v$`, `v^`, or `v8j`) |
+| v    | <kbd>SHIFT</kbd> <kbd>V</kbd>                       | Select line                                                       |
+| v    | <kbd>g</kbd> <kbd>g</kbd> <kbd>V</kbd> <kbd>G</kbd> | Select all                                                        |
+| v    | <kbd>v</kbd> <kbd>i</kbd> <kbd>w</kbd>              | Visual inner word (select word)                                   |
+| v    | <kbd>v</kbd> <kbd>i</kbd> <kbd>"</kbd>              | Visual inner quotes (select everything inside of `"` quotes)      |
+| v    | <kbd>v</kbd> <kbd>i</kbd> <kbd>{</kbd>              | Visual inner braces (select everything inside of `{}` braces)     |
+| v    | <kbd>v</kbd> <kbd>i</kbd> <kbd>[</kbd>              | Visual inner brackets (select everything inside of `[]` brackets) |
+| v    | <kbd>v</kbd> <kbd>a</kbd> <kbd>"</kbd>              | Visual outer quotes (select everything including `"` quotes)      |
+| v    | <kbd>v</kbd> <kbd>a</kbd> <kbd>{</kbd>              | Visual outer braces (select everything including `{}` braces)     |
+| v    | <kbd>v</kbd> <kbd>a</kbd> <kbd>[</kbd>              | Visual outer brackets (select everything including `[]` brackets) |
 
 #### Copying and moving text
 
@@ -138,13 +143,17 @@ Leader key: <kbd>Spacebar</kbd>
 | nv   | <kbd>y</kbd> <kbd>i</kbd> <kbd>w</kbd> | Yank inner word (copy word)                                                          |
 | nv   | <kbd>d</kbd> <kbd>i</kbd> <kbd>w</kbd> | Delete inner word (delete word)                                                      |
 
-#### Searching: Telescope
-
-| Mode | Input                                       | Action                                    |
-| :--- | :------------------------------------------ | :---------------------------------------- |
-| n    | <kbd>leader</kbd> <kbd>SPACE</kbd>          | Find files from root directory            |
-| n    | <kbd>leader</kbd> <kbd>f</kbd> <kbd>F</kbd> | Find files from current working directory |
-| n    | <kbd>leader</kbd> <kbd>/</kbd>              | Live grep: search in all files            |
+#### Searching
+| Mode | Input                                       | Action                                                   |
+| :--- | :------------------------------------------ | :------------------------------------------------------- |
+| n    | <kbd>\*</kbd>                               | Search forward for the identifier under the cursor       |
+| n    | <kbd>#</kbd>                                | Search backward for the identifier under the cursor      |
+| n    | <kbd>/</kbd>                                | Search forward, repeat last search with <kbd>n</kbd>     |
+| n    | <kbd>?</kbd>                                | Search backward, repeat last search with <kbd>N</kbd>    |
+| n    | <kbd>leader</kbd> <kbd>SPACE</kbd>          | Find files from root directory                           |
+| n    | <kbd>leader</kbd> <kbd>f</kbd> <kbd>F</kbd> | Find files from current working directory                |
+| n    | <kbd>leader</kbd> <kbd>/</kbd>              | Live grep: search in all files                           |
+| n    | <kbd>s</kbd>                                | Flash: search window, use labels to jump to any location |
 
 #### File Explorer: Neo-tree
 
