@@ -8,6 +8,8 @@ Configuration for Neovim, Vim-based text editor.
 
 ### Keybindings
 
+Neovim key mapping, based on macOS.
+
 Leader key: <kbd>Spacebar</kbd>
 
 #### Lazy
@@ -56,13 +58,16 @@ Leader key: <kbd>Spacebar</kbd>
 | nv   | <kbd>0</kbd>                      | First character in line                                               |
 | nv   | <kbd>^</kbd>                      | First non-blank character in line                                     |
 | nv   | <kbd>$</kbd>                      | End of line                                                           |
+| nv   | <kbd>{</kbd>                      | Previous empty line                                                   |
+| nv   | <kbd>}</kbd>                      | Next empty line                                                       |
 | nv   | <kbd>g</kbd> <kbd>M</kbd>         | Goto middle of line                                                   |
 | nv   | <kbd>g</kbd> <kbd>g</kbd>         | Goto first line, beginning of document                                |
 | nv   | <kbd>G</kbd>                      | Goto last line, end of document                                       |
 | nv   | <kbd>[number]</kbd> <kbd>gg</kbd> | Goto line _number_ (also works with <kbd>[number]</kbd> <kbd>G</kbd>) |
 | nv   | <kbd>[number]</kbd> <kbd>%</kbd>  | Goto line at _number_ percentage (as in `25%`, `50%`, or `100%`)      |
-| nv   | <kbd>{</kbd>                      | Previous empty line                                                   |
-| nv   | <kbd>}</kbd>                      | Next empty line                                                       |
+| n    | <kbd>g</kbd> <kbd>d</kbd>         | Goto definition                                                       |
+| n    | <kbd>g</kbd> <kbd>D</kbd>         | Goto declaration                                                      |
+| n    | <kbd>g</kbd> <kbd>I</kbd>         | Goto implementation                                                   |
 
 #### Scrolling
 
@@ -78,26 +83,29 @@ Leader key: <kbd>Spacebar</kbd>
 
 #### Editing
 
-| Mode | Input                                       | Action                                       |
-| :--- | :------------------------------------------ | :------------------------------------------- |
-| n    | <kbd>i</kbd>                                | Insert text before the cursor                |
-| n    | <kbd>SHIFT</kbd> <kbd>I</kbd>               | Insert text before first non-blank character |
-| n    | <kbd>a</kbd>                                | Append text after the cursor                 |
-| n    | <kbd>SHIFT</kbd> <kbd>A</kbd>               | Append text at end of line                   |
-| n    | <kbd>o</kbd>                                | New line below the current line              |
-| n    | <kbd>SHIFT</kbd> <kbd>O</kbd>               | New line above the current line              |
-| n    | <kbd>x</kbd>                                | Delete character                             |
-| n    | <kbd>d</kbd> <kbd>w</kbd>                   | Delete word                                  |
-| n    | <kbd>d</kbd> <kbd>d</kbd>                   | Delete current line                          |
-| n    | <kbd>u</kbd>                                | Undo                                         |
-| n    | <kbd>CONTROL</kbd> <kbd>r</kbd>             | Redo                                         |
-| inv  | <kbd>OPTION</kbd> <kbd>j</kbd>              | Move line down                               |
-| inv  | <kbd>OPTION</kbd> <kbd>k</kbd>              | Move line up                                 |
-| inxs | <kbd>CONTROL</kbd> <kbd>c</kbd>             | Exit insert mode                             |
-| inxs | <kbd>CONTROL</kbd> <kbd>s</kbd>             | Save file                                    |
-| v    | <kbd>&gt;</kbd>                             | Indent                                       |
-| v    | <kbd>&lt;</kbd>                             | Outdent                                      |
-| nv   | <kbd>leader</kbd> <kbd>c</kbd> <kbd>f</kbd> | Format                                       |
+| Mode | Input                                       | Action                                                           |
+| :--- | :------------------------------------------ | :--------------------------------------------------------------- |
+| n    | <kbd>i</kbd>                                | Insert text before the cursor                                    |
+| n    | <kbd>SHIFT</kbd> <kbd>I</kbd>               | Insert text before first non-blank character                     |
+| n    | <kbd>a</kbd>                                | Append text after the cursor                                     |
+| n    | <kbd>SHIFT</kbd> <kbd>A</kbd>               | Append text at end of line                                       |
+| n    | <kbd>o</kbd>                                | New line below the current line                                  |
+| n    | <kbd>SHIFT</kbd> <kbd>O</kbd>               | New line above the current line                                  |
+| n    | <kbd>x</kbd>                                | Delete character                                                 |
+| n    | <kbd>d</kbd> <kbd>w</kbd>                   | Delete word                                                      |
+| n    | <kbd>d</kbd> <kbd>d</kbd>                   | Delete current line                                              |
+| n    | <kbd>u</kbd>                                | Undo                                                             |
+| n    | <kbd>CONTROL</kbd> <kbd>r</kbd>             | Redo                                                             |
+| inv  | <kbd>OPTION</kbd> <kbd>j</kbd>              | Move line down                                                   |
+| inv  | <kbd>OPTION</kbd> <kbd>k</kbd>              | Move line up                                                     |
+| v    | <kbd>g</kbd> <kbd>c</kbd>                   | Comment (multiple lines with _number_ <kbd>g</kbd> <kbd>c</kbd>) |
+| v    | <kbd>&gt;</kbd>                             | Indent                                                           |
+| v    | <kbd>&lt;</kbd>                             | Outdent                                                          |
+| nv   | <kbd>leader</kbd> <kbd>c</kbd> <kbd>f</kbd> | Format                                                           |
+| nv   | <kbd>leader</kbd> <kbd>c</kbd> <kbd>a</kbd> | Code actions                                                     |
+| nv   | <kbd>CONTROL</kbd> <kbd>n</kbd>             | Autocompletion select from dropdown                              |
+| inxs | <kbd>CONTROL</kbd> <kbd>c</kbd>             | Exit insert mode                                                 |
+| inxs | <kbd>CONTROL</kbd> <kbd>s</kbd>             | Save file                                                        |
 
 #### Selecting
 
@@ -130,7 +138,6 @@ Leader key: <kbd>Spacebar</kbd>
 | nv   | <kbd>y</kbd> <kbd>i</kbd> <kbd>w</kbd> | Yank inner word (copy word)                                                          |
 | nv   | <kbd>d</kbd> <kbd>i</kbd> <kbd>w</kbd> | Delete inner word (delete word)                                                      |
 
-
 #### Searching: Telescope
 
 | Mode | Input                                       | Action                                    |
@@ -138,6 +145,17 @@ Leader key: <kbd>Spacebar</kbd>
 | n    | <kbd>leader</kbd> <kbd>SPACE</kbd>          | Find files from root directory            |
 | n    | <kbd>leader</kbd> <kbd>f</kbd> <kbd>F</kbd> | Find files from current working directory |
 | n    | <kbd>leader</kbd> <kbd>/</kbd>              | Live grep: search in all files            |
+
+#### File Explorer: Neo-tree
+
+| Mode | Input                          | Action                                  |
+| :--- | :----------------------------- | :-------------------------------------- |
+| n    | <kbd>leader</kbd> <kbd>e</kbd> | Neo-tree: Open file system tree sidebar |
+| n    | <kbd>RETURN</kbd>              | Open directory or file                  |
+| n    | <kbd>a</kbd>                   | Add file                                |
+| n    | <kbd>d</kbd>                   | Delete file                             |
+| n    | <kbd>SHIFT</kbd> <kbd>P</kbd>  | Preview file                            |
+| n    | <kbd>?</kbd>                   | Help                                    |
 
 #### Errors
 
@@ -155,17 +173,7 @@ Leader key: <kbd>Spacebar</kbd>
 
 #### Git
 
-| Mode | Input                                       | Action |
-| :--- | :------------------------------------------ | :----- |
-| n    | <kbd>leader</kbd> <kbd>g</kbd> <kbd>g</kbd> | Git    |
-
-#### File Explorer: Neo-tree
-
-| Mode | Input                          | Action                                  |
-| :--- | :----------------------------- | :-------------------------------------- |
-| n    | <kbd>leader</kbd> <kbd>e</kbd> | Neo-tree: Open file system tree sidebar |
-| n    | <kbd>RETURN</kbd>              | Open directory or file                  |
-| n    | <kbd>a</kbd>                   | Add file                                |
-| n    | <kbd>d</kbd>                   | Delete file                             |
-| n    | <kbd>SHIFT</kbd> <kbd>P</kbd>  | Preview file                            |
-| n    | <kbd>?</kbd>                   | Help                                    |
+| Mode | Input                                       | Action             |
+| :--- | :------------------------------------------ | :----------------- |
+| n    | <kbd>leader</kbd> <kbd>g</kbd> <kbd>g</kbd> | Git                |
+| n    | <kbd>leader</kbd> <kbd>g</kbd> <kbd>c</kbd> | Git commit history |
