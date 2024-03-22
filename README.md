@@ -14,7 +14,7 @@ Neovim key mapping, based on macOS.
 
 Leader key: <kbd>Spacebar</kbd>
 
-#### Lazy
+#### LazyVim and plugins
 
 | Mode | Input                                       | Action                                           |
 | :--- | :------------------------------------------ | :----------------------------------------------- |
