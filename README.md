@@ -1,5 +1,7 @@
 # dotfiles
 
+<img width="1526" alt="screen-capture" src="https://github.com/jasonsturges/dotfiles/assets/1213591/b6ddbaa5-a373-48ac-baf8-819e658796af">
+
 Personal dotfiles of development environment
 
 ## Neovim
