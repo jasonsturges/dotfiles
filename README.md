@@ -18,7 +18,6 @@ Leader key: <kbd>Spacebar</kbd>
 
 | Mode | Input                                       | Action                                           |
 | :--- | :------------------------------------------ | :----------------------------------------------- |
-| n    | <kbd>leader</kbd> <kbd>q</kbd> <kbd>q</kbd> | Quit all                                         |
 | n    | <kbd>leader</kbd> <kbd>l</kbd>              | Lazy                                             |
 | n    | <kbd>leader</kbd> <kbd>c</kbd> <kbd>m</kbd> | Mason: Language servers, linters, and formatters |
 | n    | <kbd>leader</kbd> <kbd>e</kbd>              | Neo-tree: File system tree sidebar               |
@@ -27,6 +26,7 @@ Leader key: <kbd>Spacebar</kbd>
 | n    | <kbd>leader</kbd> <kbd>s</kbd> <kbd>r</kbd> | Spectre: Search and reaplace                     |
 | n    | <kbd>leader</kbd> <kbd>s</kbd> <kbd>h</kbd> | Search Help                                      |
 | n    | <kbd>leader</kbd> <kbd>s</kbd> <kbd>k</kbd> | Search Keymaps                                   |
+| n    | <kbd>leader</kbd> <kbd>q</kbd> <kbd>q</kbd> | Quit all                                         |
 
 #### Windows
 
