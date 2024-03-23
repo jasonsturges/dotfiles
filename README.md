@@ -227,3 +227,34 @@ Leader key: <kbd>Spacebar</kbd>
 | <kbd>CONTROL</kbd> <kbd>u</kbd> | Remove all characters (clear the command line) |
 | <kbd>CONTROL</kbd> <kbd>w</kbd> | Delete word in front of the cursor             |
 | <kbd>CONTROL</kbd> <kbd>k</kbd> | Enter digraph                                  |
+
+## TMUX
+
+Configuration for TMUX, terminal multiplexer.
+
+### Keybindings
+
+TMUX key mapping, based on macOS.
+
+Prefix: <kbd>CONTROL</kbd> <kbd>b</kbd>
+
+| Input                                                 | Action                                     |
+| :---------------------------------------------------- | :----------------------------------------- |
+| <kbd>Prefix</kbd> <kbd>c</kbd>                        | Create window                              |
+| <kbd>Prefix</kbd> <kbd>n</kbd>                        | Next window                                |
+| <kbd>Prefix</kbd> <kbd>p</kbd>                        | Previous window                            |
+| <kbd>Prefix</kbd> <kbd>0</kbd>                        | Select window 0 (or enter window _number_) |
+| <kbd>Prefix</kbd> <kbd>,</kbd>                        | Rename window                              |
+| <kbd>Prefix</kbd> <kbd>w</kbd>                        | List windows                               |
+| <kbd>Prefix</kbd> <kbd>%</kbd>                        | Split window vertically                    |
+| <kbd>Prefix</kbd> <kbd>"</kbd>                        | Split window horizontally                  |
+| <kbd>Prefix</kbd> <kbd>m</kbd>                        | Toggle window maximize                     |
+| <kbd>Prefix</kbd> <kbd>z</kbd>                        | Toggle pane zoom                           |
+| <kbd>Prefix</kbd> <kbd>Arrow</kbd>                    | Cycle window focus in direction            |
+| <kbd>Prefix</kbd> <kbd>d</kbd>                        | Detach from session                        |
+| <kbd>Prefix</kbd> <kbd>s</kbd>                        | List sessions                              |
+| <kbd>Prefix</kbd> <kbd>q</kbd>                        | Show window numbers                        |
+| <kbd>Prefix</kbd> <kbd>&</kbd>                        | Kill window                                |
+| <kbd>Prefix</kbd> <kbd>x</kbd>                        | Kill pane                                  |
+| <kbd>Prefix</kbd> <kbd>COMMAND</kbd> <kbd>Arrow</kbd> | Resize pane in direction                   |
+| <kbd>Prefix</kbd> <kbd>I</kbd>                        | Install plugins                            |
