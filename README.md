@@ -110,6 +110,8 @@ Leader key: <kbd>Spacebar</kbd>
 | inv  | <kbd>OPTION</kbd> <kbd>k</kbd>              | Move line up                                                     |
 | nv   | <kbd>SHIFT</kbd> <kbd>J</kbd>               | Join lines (with next line, or highlighted lines)                |
 | v    | <kbd>g</kbd> <kbd>c</kbd>                   | Comment (multiple lines with _number_ <kbd>g</kbd> <kbd>c</kbd>) |
+| n    | <kbd>g</kbd> <kbd>c</kbd> <kbd>o</kbd>      | Comment below the current line                                   |
+| n    | <kbd>g</kbd> <kbd>c</kbd> <kbd>O</kbd>      | Comment above the current line                                   |
 | v    | <kbd>&gt;</kbd>                             | Indent                                                           |
 | v    | <kbd>&lt;</kbd>                             | Outdent                                                          |
 | nv   | <kbd>leader</kbd> <kbd>c</kbd> <kbd>f</kbd> | Format                                                           |
@@ -206,10 +208,11 @@ Leader key: <kbd>Spacebar</kbd>
 
 #### Git
 
-| Mode | Input                                       | Action             |
-| :--- | :------------------------------------------ | :----------------- |
-| n    | <kbd>leader</kbd> <kbd>g</kbd> <kbd>g</kbd> | Git                |
-| n    | <kbd>leader</kbd> <kbd>g</kbd> <kbd>c</kbd> | Git commit history |
+| Mode | Input                                       | Action                   |
+| :--- | :------------------------------------------ | :----------------------- |
+| n    | <kbd>leader</kbd> <kbd>g</kbd> <kbd>g</kbd> | Git                      |
+| n    | <kbd>leader</kbd> <kbd>g</kbd> <kbd>c</kbd> | Git commit history       |
+| n    | <kbd>leader</kbd> <kbd>g</kbd> <kbd>B</ibd> | Open repo in the browser |
 
 #### Information
 
