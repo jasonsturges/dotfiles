@@ -8,6 +8,13 @@ Personal dotfiles of development environment
 
 Configuration for Neovim, Vim-based text editor.
 
+- [Neovim](https://neovim.io/)
+  - [Quick Reference](https://neovim.io/doc/user/quickref.html)
+  - [Command Index](https://neovim.io/doc/user/vimindex.html)
+- [LazyVim](https://www.lazyvim.org/)
+  - [News](https://www.lazyvim.org/news)
+  - [Keymaps](https://www.lazyvim.org/keymaps)
+
 ### Keybindings
 
 Neovim key mapping, based on macOS.
