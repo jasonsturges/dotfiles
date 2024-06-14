@@ -221,6 +221,17 @@ Leader key: <kbd>Spacebar</kbd>
 | n    | <kbd>leader</kbd> <kbd>g</kbd> <kbd>c</kbd> | Git commit history       |
 | n    | <kbd>leader</kbd> <kbd>g</kbd> <kbd>B</ibd> | Open repo in the browser |
 
+#### Copilot
+
+| Mode | Input                                       | Action                   |
+| :--- | :------------------------------------------ | :----------------------- |
+| nv   | <kbd>leader</kbd> <kbd>a</kbd>              | Copilot                  |
+| nv   | <kbd>leader</kbd> <kbd>a</kbd> <kbd>a</ibd> | Toggle Copilot chat      |
+| nv   | <kbd>leader</kbd> <kbd>a</kbd> <kbd>d</ibd> | Diagnostic help          |
+| nv   | <kbd>leader</kbd> <kbd>a</kbd> <kbd>p</ibd> | Prompt actions           |
+| nv   | <kbd>leader</kbd> <kbd>a</kbd> <kbd>q</ibd> | Quick chat               |
+| nv   | <kbd>leader</kbd> <kbd>a</kbd> <kbd>x</ibd> | Clear chat               |
+
 #### Information
 
 | Mode | Input                                        | Action                                                      |
