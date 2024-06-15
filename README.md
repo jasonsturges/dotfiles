@@ -124,8 +124,10 @@ Leader key: `Spacebar`
 | n    | `<S-O>`       | New line above the current line                   |
 | n    | `x`           | Delete character                                  |
 | n    | `dw`          | Delete word                                       |
-| n    | `<S-D>`       | Delete to end of line                             |
 | n    | `dd`          | Delete current line                               |
+| n    | `D`           | Delete to end of line                             |
+| n    | `dG`          | Delete to end of file                             |
+| n    | `dgg`         | Delete to beginning of file                       |
 | n    | `r`           | Replace character                                 |
 | n    | `R`           | Replace mode                                      |
 | n    | `u`           | Undo                                              |
