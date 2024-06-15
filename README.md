@@ -26,11 +26,13 @@ Leader key: `Spacebar`
 | Mode | Input         | Action                                           |
 |:-----|:--------------|:-------------------------------------------------|
 | n    | `<leader> l`  | Lazy                                             |
+| n    | `:LazyExtras` | Lazy extras                                      |
 | n    | `<leader> cm` | Mason: Language servers, linters, and formatters |
 | n    | `<leader> e`  | Neo-tree: File system tree sidebar               |
 | n    | `<leader> gg` | Lazygit: Terminal UI for git commands            |
 | n    | `<leader> cs` | Aerial: Code outline                             |
-| n    | `<leader> sr` | Spectre: Search and reaplace                     |
+| n    | `<leader> sr` | Spectre: Search and replace                      |
+| n    | `<leader> sn` | Noice                                            |
 | n    | `<leader> sh` | Search Help                                      |
 | n    | `<leader> sk` | Search Keymaps                                   |
 | n    | `<leader> qq` | Quit all                                         |
@@ -54,46 +56,61 @@ Leader key: `Spacebar`
 |:-----|:--------------|:----------------------------------------|
 | n    | `<S-H>`       | Previous buffer (left)                  |
 | n    | `<S-L>`       | Next buffer (right)                     |
+| n    | `<leader> fb` | Buffers                                 |
+| n    | `<leader> be` | Buffer explorer                         |
 | n    | `<leader> bd` | Delete buffer: Close the current buffer |
-
-#### Movement
-
-| Mode | Input        | Action                                                              |
-|:-----|:-------------|:--------------------------------------------------------------------|
-| nv   | `h`          | Move left                                                           |
-| nv   | `j`          | Move down                                                           |
-| nv   | `k`          | Move up                                                             |
-| nv   | `l`          | Move right                                                          |
-| nv   | `b`          | Previous word                                                       |
-| nv   | `w`          | Next word                                                           |
-| nv   | `e`          | Next end of word                                                    |
-| nv   | `0`          | First character in line                                             |
-| nv   | `^`          | First non-blank character in line                                   |
-| nv   | `$`          | End of line                                                         |
-| nv   | `{`          | Previous empty line                                                 |
-| nv   | `}`          | Next empty line                                                     |
-| nv   | `%`          | Find next brace or bracket on the current line, and go to its match |
-| nv   | `gM`         | Goto middle of line                                                 |
-| nv   | `gg`         | Goto first line, beginning of document                              |
-| nv   | `G`          | Goto last line, end of document                                     |
-| nv   | `[number]gg` | Goto line _number_ (also works with `[number]G`)                    |
-| nv   | `[number]%`  | Goto line at _number_ percentage (as in `25%`, `50%`, or `100%`)    |
-| n    | `gd`         | Goto definition                                                     |
-| n    | `gD`         | Goto declaration                                                    |
-| n    | `gI`         | Goto implementation                                                 |
-| n    | `gy`         | Goto type definition                                                |
+| n    | `<leader> bl` | Delete buffers to the left              |
+| n    | `<leader> br` | Delete buffers to the right             |
+| n    | `<leader> bo` | Delete other buffers                    |
+| n    | `<leader> fr` | Recent                                  |
+| n    | `<leader> fR` | Recent cwd                              |
 
 #### Scrolling
 
 | Mode | Input      | Action                                         |
 |:-----|:-----------|:-----------------------------------------------|
-| inv  | `<S-Up>`   | Move one screenful backword (page up)          |
-| inv  | `<S-Down>` | Move one screenful forward (page down)         |
+| inv  | `<S-Up>`   | Move one screen backward (page up)             |
+| inv  | `<S-Down>` | Move one screen forward (page down)            |
 | nv   | `zt`       | Redraw current line at top of window           |
 | nv   | `zz`       | Redraw current line at center of window        |
 | nv   | `zb`       | Redraw current line at bottom of window        |
 | nv   | `zH`       | Scroll screen half a screen width to the right |
 | nv   | `zL`       | Scroll screen half a screen width to the left  |
+
+#### Movement
+
+| Mode | Input         | Action                                                              |
+|:-----|:--------------|:--------------------------------------------------------------------|
+| nv   | `h`           | Move left                                                           |
+| nv   | `j`           | Move down                                                           |
+| nv   | `k`           | Move up                                                             |
+| nv   | `l`           | Move right                                                          |
+| nv   | `b`           | Previous word                                                       |
+| nv   | `w`           | Next word                                                           |
+| nv   | `e`           | Next end of word                                                    |
+| nv   | `0`           | First character in line                                             |
+| nv   | `^`           | First non-blank character in line                                   |
+| nv   | `$`           | End of line                                                         |
+| nv   | `{`           | Previous empty line                                                 |
+| nv   | `}`           | Next empty line                                                     |
+| nv   | `%`           | Find next brace or bracket on the current line, and go to its match |
+| nv   | `gM`          | Goto middle of line                                                 |
+| nv   | `gg`          | Goto first line, beginning of document                              |
+| nv   | `G`           | Goto last line, end of document                                     |
+| nv   | `[number]gg`  | Goto line _number_ (also works with `[number]G`)                    |
+| nv   | `[number]%`   | Goto line at _number_ percentage (as in `25%`, `50%`, or `100%`)    |
+| n    | `<leader> ss` | Goto symbol                                                         |
+| n    | `<leader> sS` | Goto symbol (Workspace)                                             |
+| n    | `<leader> sw` | Word (root directory)                                               |
+| n    | `<leader> sW` | Word (cwd)                                                          |
+| n    | `gd`          | Goto definition                                                     |
+| n    | `gD`          | Goto declaration                                                    |
+| n    | `gI`          | Goto implementation                                                 |
+| n    | `gy`          | Goto type definition                                                |
+| n    | `gr`          | References                                                          |
+| n    | `]]`          | Next reference                                                      |
+| n    | `[[`          | Previous reference                                                  |
+| n    | `K`           | Hover                                                               |
 
 #### Editing
 
@@ -119,13 +136,23 @@ Leader key: `Spacebar`
 | v    | `gc`          | Comment (multiple lines with _number_ `gc`)       |
 | n    | `gco`         | Comment below the current line                    |
 | n    | `gcO`         | Comment above the current line                    |
-| v    | `&gt;`        | Indent                                            |
-| v    | `&lt;`        | Outdent                                           |
+| v    | `>`           | Indent                                            |
+| v    | `<`           | Outdent                                           |
+| n    | `<leader> cr` | Rename                                            |
 | nv   | `<leader> cf` | Format                                            |
+| n    | `<leader> uf` | Toggle auto format (Global)                       |
+| n    | `<leader> uF` | Toggle auto format (Buffer)                       |
+| n    | `<leader> us` | Toggle spelling                                   |
+| n    | `<leader> uw` | Toggle word wrap                                  |
+| n    | `<leader> ul` | Toggle line numbers                               |
+| n    | `<leader> uL` | Toggle relative line numbers                      |
 | nv   | `<leader> ca` | Code actions                                      |
 | nv   | `<C-n>`       | Autocompletion select from dropdown               |
 | inxs | `<C-c>`       | Exit insert mode                                  |
 | inxs | `<C-s>`       | Save file                                         |
+| n    | `<leader> fn` | New file                                          |
+| n    | `<leader> cR` | Rename file                                       |
+| n    | `<leader> cp` | Markdown preview                                  |
 
 #### Selecting
 
@@ -149,18 +176,20 @@ Leader key: `Spacebar`
 
 #### Copying and moving text
 
-| Mode | Input   | Action                                                        |
-|:-----|:--------|:--------------------------------------------------------------|
-| nv   | `y`     | Yank into register (copy)                                     |
-| nv   | `yy`    | Yank current line into register (copy, also mapped as `<S-Y`) |
-| nv   | `y$`    | Yank from cursor to end of line register (copy)               |
-| nv   | `y^`    | Yank from cursor to first non-blank character of line (copy)  |
-| nv   | `d`     | Delete (cut)                                                  |
-| nv   | `dd`    | Delete current line (cut)                                     |
-| nv   | `p`     | Put register after cursor (paste)                             |
-| nv   | `<S-P>` | Put register before cursor (paste)                            |
-| nv   | `yiw`   | Yank inner word (copy word)                                   |
-| nv   | `diw`   | Delete inner word (delete word)                               |
+| Mode | Input | Action                                                        |
+|:-----|:------|:--------------------------------------------------------------|
+| nv   | `y`   | Yank into register (copy)                                     |
+| nv   | `yy`  | Yank current line into register (copy, also mapped as `<S-Y`) |
+| nv   | `y$`  | Yank from cursor to end of line register (copy)               |
+| nv   | `y^`  | Yank from cursor to first non-blank character of line (copy)  |
+| nv   | `d`   | Delete (cut)                                                  |
+| nv   | `dd`  | Delete current line (cut)                                     |
+| nv   | `p`   | Put register after cursor                                     |
+| nv   | `P`   | Put register before cursor                                    |
+| nv   | `gp`  | Put register after selection                                  |
+| nv   | `gP`  | Put register before selection                                 |
+| nv   | `yiw` | Yank inner word (copy word)                                   |
+| nv   | `diw` | Delete inner word (delete word)                               |
 
 #### Searching
 
@@ -172,14 +201,33 @@ Leader key: `Spacebar`
 | n    | `?`              | Search backward, repeat last search with `N`             |
 | n    | `<leader> SPACE` | Find files from root directory                           |
 | n    | `<leader> fF`    | Find files from current working directory                |
-| n    | `<leader> /`     | Live grep: search in all files                           |
+| n    | `<leader> /`     | Live grep: search in all files (also: `<leader> sg>`)    |
+| n    | `<leader> sG`    | Live grep: search in cwd                                 |
 | n    | `s`              | Flash: search window, use labels to jump to any location |
+
+#### Refactoring
+
+| Mode | Input         | Action                   |
+|:-----|:--------------|:-------------------------|
+| n    | `<leader> rb` | Extract block            |
+| n    | `<leader> rf` | Extract block to file    |
+| v    | `<leader> rf` | Extract function         |
+| v    | `<leader> rR` | Extract function to file |
+| v    | `<leader> rx` | Extract variable         |
+| nv   | `<leader> ri` | Inline variable          |
+| nv   | `<leader> rp` | Debug print variable     |
+| v    | `<leader> rs` | Refactor                 |
+| n    | `<leader> rP` | Debug print              |
+| n    | `<leader> rc` | Debug cleanup            |
 
 #### TODOs
 
 | M | Input         | Action                            |
 |:--|:--------------|:----------------------------------|
 | n | `<leader> st` | Todos: All todos in the workspace |
+| n | `<leader> xt` | Todo (Trouble)                    |
+| n | `[t`          | Previous Todo                     |
+| n | `]t`          | Next Todo                         |
 
 #### Code Folding
 
@@ -211,6 +259,7 @@ Leader key: `Spacebar`
 |:-----|:--------------|:----------------------------------|
 | n    | `<leader> xx` | Document diagnostics: error list  |
 | n    | `<leader> xX` | Workspace diagnostics: error list |
+| n    | `<leader> sq` | Quickfix list                     |
 | n    | `<leader> xq` | Quickfix list                     |
 
 #### TODOs
@@ -224,7 +273,14 @@ Leader key: `Spacebar`
 | Mode | Input         | Action                   |
 |:-----|:--------------|:-------------------------|
 | n    | `<leader> gg` | Git                      |
+| n    | `<leader> gs` | Git status               |
+| n    | `<leader> ge` | Git explorer             |
 | n    | `<leader> gc` | Git commit history       |
+| n    | `<leader> gl` | Git log                  |
+| n    | `<leader> gL` | Git log (cwd)            |
+| n    | `<leader> gf` | Git current file history |
+| n    | `<leader> gb` | Git blame line           |
+| n    | `<leader> fg` | Find git files           |
 | n    | `<leader> gB` | Open repo in the browser |
 
 #### Copilot
@@ -247,13 +303,22 @@ Leader key: `Spacebar`
 | n    | `g8`     | Show utf-8 encoding byte sequence of character under cursor |
 | n    | `g<C-G>` | Show cursor column, line, word, and byte position           |
 
+#### Terminal
+
+| Mode | Input         | Action              |
+|:-----|:--------------|:--------------------|
+| n    | `<leader> ft` | Terminal (root dir) |
+| n    | `<leader> fT` | Terminal (cwd)      |
+
 #### Command line
 
-| Input   | Action                                         |
-|:--------|:-----------------------------------------------|
-| `<C-u>` | Remove all characters (clear the command line) |
-| `<C-w>` | Delete word in front of the cursor             |
-| `<C-k>` | Enter digraph                                  |
+| Input         | Action                                         |
+|:--------------|:-----------------------------------------------|
+| `<leader> sC` | Commands                                       |
+| `<leader> :`  | Command history                                |
+| `<C-u>`       | Remove all characters (clear the command line) |
+| `<C-w>`       | Delete word in front of the cursor             |
+| `<C-k>`       | Enter digraph                                  |
 
 ## TMUX
 
