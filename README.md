@@ -193,7 +193,7 @@ Leader key: `Spacebar`
 | nv   | `yiw` | Yank inner word (copy word)                                   |
 | nv   | `diw` | Delete inner word (delete word)                               |
 
-#### Searching
+#### Searching and replacing
 
 | Mode | Input            | Action                                                   |
 | :--- | :--------------- | :------------------------------------------------------- |
@@ -206,6 +206,8 @@ Leader key: `Spacebar`
 | n    | `<leader> /`     | Live grep: search in all files (also: `<leader> sg>`)    |
 | n    | `<leader> sG`    | Live grep: search in cwd                                 |
 | n    | `s`              | Flash: search window, use labels to jump to any location |
+| n    | `:s/old/new/g`   | Substitute `old` with `new` in the current line          |
+| n    | `:%s/old/new/g`  | Substitute `old` with `new` in the current file          |
 
 #### Refactoring
 
