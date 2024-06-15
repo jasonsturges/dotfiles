@@ -9,11 +9,11 @@ Personal dotfiles of development environment
 Configuration for Neovim, Vim-based text editor.
 
 - [Neovim](https://neovim.io/)
-    - [Quick Reference](https://neovim.io/doc/user/quickref.html)
-    - [Command Index](https://neovim.io/doc/user/vimindex.html)
+  - [Quick Reference](https://neovim.io/doc/user/quickref.html)
+  - [Command Index](https://neovim.io/doc/user/vimindex.html)
 - [LazyVim](https://www.lazyvim.org/)
-    - [News](https://www.lazyvim.org/news)
-    - [Keymaps](https://www.lazyvim.org/keymaps)
+  - [News](https://www.lazyvim.org/news)
+  - [Keymaps](https://www.lazyvim.org/keymaps)
 
 ### Keybindings
 
@@ -24,7 +24,7 @@ Leader key: `Spacebar`
 #### LazyVim and plugins
 
 | Mode | Input         | Action                                           |
-|:-----|:--------------|:-------------------------------------------------|
+| :--- | :------------ | :----------------------------------------------- |
 | n    | `<leader> l`  | Lazy                                             |
 | n    | `:LazyExtras` | Lazy extras                                      |
 | n    | `<leader> cm` | Mason: Language servers, linters, and formatters |
@@ -40,7 +40,7 @@ Leader key: `Spacebar`
 #### Windows
 
 | Mode | Input         | Action                                  |
-|:-----|:--------------|:----------------------------------------|
+| :--- | :------------ | :-------------------------------------- |
 | n    | `<leader> -`  | Split window horizontal                 |
 | n    | `<leader> \|` | Split window vertical                   |
 | n    | `<leader> wd` | Delete window: Close the current window |
@@ -53,7 +53,7 @@ Leader key: `Spacebar`
 #### Buffers
 
 | Mode | Input         | Action                                  |
-|:-----|:--------------|:----------------------------------------|
+| :--- | :------------ | :-------------------------------------- |
 | n    | `<S-H>`       | Previous buffer (left)                  |
 | n    | `<S-L>`       | Next buffer (right)                     |
 | n    | `<leader> fb` | Buffers                                 |
@@ -68,7 +68,7 @@ Leader key: `Spacebar`
 #### Scrolling
 
 | Mode | Input      | Action                                         |
-|:-----|:-----------|:-----------------------------------------------|
+| :--- | :--------- | :--------------------------------------------- |
 | inv  | `<S-Up>`   | Move one screen backward (page up)             |
 | inv  | `<S-Down>` | Move one screen forward (page down)            |
 | nv   | `zt`       | Redraw current line at top of window           |
@@ -80,7 +80,7 @@ Leader key: `Spacebar`
 #### Movement
 
 | Mode | Input         | Action                                                              |
-|:-----|:--------------|:--------------------------------------------------------------------|
+| :--- | :------------ | :------------------------------------------------------------------ |
 | nv   | `h`           | Move left                                                           |
 | nv   | `j`           | Move down                                                           |
 | nv   | `k`           | Move up                                                             |
@@ -115,7 +115,7 @@ Leader key: `Spacebar`
 #### Editing
 
 | Mode | Input         | Action                                            |
-|:-----|:--------------|:--------------------------------------------------|
+| :--- | :------------ | :------------------------------------------------ |
 | n    | `i`           | Insert text before the cursor                     |
 | n    | `<S-I>`       | Insert text before first non-blank character      |
 | n    | `a`           | Append text after the cursor                      |
@@ -157,7 +157,7 @@ Leader key: `Spacebar`
 #### Selecting
 
 | Mode | Input   | Action                                                                       |
-|:-----|:--------|:-----------------------------------------------------------------------------|
+| :--- | :------ | :--------------------------------------------------------------------------- |
 | v    | `v`     | Enter visual mode, followed by vim movement (examples: `v$`, `v^`, or `v8j`) |
 | v    | `<S-V>` | Select line                                                                  |
 | v    | `ggVG`  | Select all                                                                   |
@@ -177,7 +177,7 @@ Leader key: `Spacebar`
 #### Copying and moving text
 
 | Mode | Input | Action                                                        |
-|:-----|:------|:--------------------------------------------------------------|
+| :--- | :---- | :------------------------------------------------------------ |
 | nv   | `y`   | Yank into register (copy)                                     |
 | nv   | `yy`  | Yank current line into register (copy, also mapped as `<S-Y`) |
 | nv   | `y$`  | Yank from cursor to end of line register (copy)               |
@@ -194,7 +194,7 @@ Leader key: `Spacebar`
 #### Searching
 
 | Mode | Input            | Action                                                   |
-|:-----|:-----------------|:---------------------------------------------------------|
+| :--- | :--------------- | :------------------------------------------------------- |
 | n    | `\*`             | Search forward for the identifier under the cursor       |
 | n    | `#`              | Search backward for the identifier under the cursor      |
 | n    | `/`              | Search forward, repeat last search with `n`              |
@@ -208,7 +208,7 @@ Leader key: `Spacebar`
 #### Refactoring
 
 | Mode | Input         | Action                   |
-|:-----|:--------------|:-------------------------|
+| :--- | :------------ | :----------------------- |
 | n    | `<leader> rb` | Extract block            |
 | n    | `<leader> rf` | Extract block to file    |
 | v    | `<leader> rf` | Extract function         |
@@ -222,17 +222,17 @@ Leader key: `Spacebar`
 
 #### TODOs
 
-| M | Input         | Action                            |
-|:--|:--------------|:----------------------------------|
-| n | `<leader> st` | Todos: All todos in the workspace |
-| n | `<leader> xt` | Todo (Trouble)                    |
-| n | `[t`          | Previous Todo                     |
-| n | `]t`          | Next Todo                         |
+| M   | Input         | Action                            |
+| :-- | :------------ | :-------------------------------- |
+| n   | `<leader> st` | Todos: All todos in the workspace |
+| n   | `<leader> xt` | Todo (Trouble)                    |
+| n   | `[t`          | Previous Todo                     |
+| n   | `]t`          | Next Todo                         |
 
 #### Code Folding
 
 | Mode | Input | Action                           |
-|:-----|:------|:---------------------------------|
+| :--- | :---- | :------------------------------- |
 | n    | `zc`  | Close one fold under the cursor  |
 | n    | `zC`  | Close all folds under the cursor |
 | n    | `zm`  | Fold more                        |
@@ -245,7 +245,7 @@ Leader key: `Spacebar`
 #### File Explorer: Neo-tree
 
 | Mode | Input        | Action                                  |
-|:-----|:-------------|:----------------------------------------|
+| :--- | :----------- | :-------------------------------------- |
 | n    | `<leader> e` | Neo-tree: Open file system tree sidebar |
 | n    | `<CR>`       | Open directory or file                  |
 | n    | `a`          | Add file                                |
@@ -256,7 +256,7 @@ Leader key: `Spacebar`
 #### Errors
 
 | Mode | Input         | Action                            |
-|:-----|:--------------|:----------------------------------|
+| :--- | :------------ | :-------------------------------- |
 | n    | `<leader> xx` | Document diagnostics: error list  |
 | n    | `<leader> xX` | Workspace diagnostics: error list |
 | n    | `<leader> sq` | Quickfix list                     |
@@ -265,13 +265,13 @@ Leader key: `Spacebar`
 #### TODOs
 
 | Mode | Input         | Action                            |
-|:-----|:--------------|:----------------------------------|
+| :--- | :------------ | :-------------------------------- |
 | n    | `<leader> xt` | Todos: All todos in the workspace |
 
 #### Git
 
 | Mode | Input         | Action                   |
-|:-----|:--------------|:-------------------------|
+| :--- | :------------ | :----------------------- |
 | n    | `<leader> gg` | Git                      |
 | n    | `<leader> gs` | Git status               |
 | n    | `<leader> ge` | Git explorer             |
@@ -286,7 +286,7 @@ Leader key: `Spacebar`
 #### Copilot
 
 | Mode | Input              | Action              |
-|:-----|:-------------------|:--------------------|
+| :--- | :----------------- | :------------------ |
 | nv   | `<leader> a`       | Copilot             |
 | nv   | `<leader> aa</ibd> | Toggle Copilot chat |
 | nv   | `<leader> ad</ibd> | Diagnostic help     |
@@ -297,7 +297,7 @@ Leader key: `Spacebar`
 #### Information
 
 | Mode | Input    | Action                                                      |
-|:-----|:---------|:------------------------------------------------------------|
+| :--- | :------- | :---------------------------------------------------------- |
 | n    | `<C-g>`  | Show current file name with path                            |
 | n    | `ga`     | Show ascii value of character under cursor                  |
 | n    | `g8`     | Show utf-8 encoding byte sequence of character under cursor |
@@ -306,14 +306,14 @@ Leader key: `Spacebar`
 #### Terminal
 
 | Mode | Input         | Action              |
-|:-----|:--------------|:--------------------|
+| :--- | :------------ | :------------------ |
 | n    | `<leader> ft` | Terminal (root dir) |
 | n    | `<leader> fT` | Terminal (cwd)      |
 
 #### Command line
 
 | Input         | Action                                         |
-|:--------------|:-----------------------------------------------|
+| :------------ | :--------------------------------------------- |
 | `<leader> sC` | Commands                                       |
 | `<leader> :`  | Command history                                |
 | `<C-u>`       | Remove all characters (clear the command line) |
@@ -331,7 +331,7 @@ TMUX key mapping, based on macOS.
 Prefix: `<CONTROL-b>`
 
 | Input                  | Action                                     |
-|:-----------------------|:-------------------------------------------|
+| :--------------------- | :----------------------------------------- |
 | `<prefix> c`           | Create window                              |
 | `<prefix> n`           | Next window                                |
 | `<prefix> p`           | Previous window                            |
