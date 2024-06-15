@@ -287,14 +287,14 @@ Leader key: `Spacebar`
 
 #### Copilot
 
-| Mode | Input              | Action              |
-| :--- | :----------------- | :------------------ |
-| nv   | `<leader> a`       | Copilot             |
-| nv   | `<leader> aa</ibd> | Toggle Copilot chat |
-| nv   | `<leader> ad</ibd> | Diagnostic help     |
-| nv   | `<leader> ap</ibd> | Prompt actions      |
-| nv   | `<leader> aq</ibd> | Quick chat          |
-| nv   | `<leader> ax</ibd> | Clear chat          |
+| Mode | Input         | Action              |
+| :--- | :------------ | :------------------ |
+| nv   | `<leader> a`  | Copilot             |
+| nv   | `<leader> aa` | Toggle Copilot chat |
+| nv   | `<leader> ad` | Diagnostic help     |
+| nv   | `<leader> ap` | Prompt actions      |
+| nv   | `<leader> aq` | Quick chat          |
+| nv   | `<leader> ax` | Clear chat          |
 
 #### Information
 
