@@ -313,6 +313,8 @@ Leader key: `Spacebar`
 | :--- | :------------ | :------------------ |
 | n    | `<leader> ft` | Terminal (root dir) |
 | n    | `<leader> fT` | Terminal (cwd)      |
+| n    | :terminal     | Open terminal       |
+| n    | `<C-\> <C-n>` | Exit terminal       |
 
 #### Command line
 
