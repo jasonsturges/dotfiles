@@ -316,6 +316,16 @@ Leader key: `Spacebar`
 | n    | :terminal     | Open terminal       |
 | n    | `<C-\> <C-n>` | Exit terminal       |
 
+#### Package Info
+
+| Mode | Input         | Action                              |
+| :--- | :------------ | :---------------------------------- |
+| n    | `<leader> ni` | Install a new dependency            |
+| n    | `<leader> nu` | Update dependency on line           |
+| n    | `<leader> ns` | Show dependency versions            |
+| n    | `<leader> nc` | Instal different dependency version |
+| n    | `<leader> nd` | Delete dependency on line           |
+
 #### Command line
 
 | Input         | Action                                         |
