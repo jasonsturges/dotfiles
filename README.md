@@ -117,11 +117,11 @@ Leader key: `Spacebar`
 | Mode | Input         | Action                                            |
 | :--- | :------------ | :------------------------------------------------ |
 | n    | `i`           | Insert text before the cursor                     |
-| n    | `<S-I>`       | Insert text before first non-blank character      |
+| n    | `I`           | Insert text before first non-blank character      |
 | n    | `a`           | Append text after the cursor                      |
-| n    | `<S-A>`       | Append text at end of line                        |
+| n    | `A`           | Append text at end of line                        |
 | n    | `o`           | New line below the current line                   |
-| n    | `<S-O>`       | New line above the current line                   |
+| n    | `O`           | New line above the current line                   |
 | n    | `x`           | Delete character                                  |
 | n    | `dw`          | Delete word                                       |
 | n    | `dd`          | Delete current line                               |
@@ -134,7 +134,7 @@ Leader key: `Spacebar`
 | n    | `<C-r>`       | Redo                                              |
 | inv  | `<OPTION-j>`  | Move line down                                    |
 | inv  | `<OPTION-k>`  | Move line up                                      |
-| nv   | `<S-J>`       | Join lines (with next line, or highlighted lines) |
+| nv   | `J`           | Join lines (with next line, or highlighted lines) |
 | v    | `gc`          | Comment (multiple lines with _number_ `gc`)       |
 | n    | `gco`         | Comment below the current line                    |
 | n    | `gcO`         | Comment above the current line                    |
@@ -161,7 +161,7 @@ Leader key: `Spacebar`
 | Mode | Input   | Action                                                                       |
 | :--- | :------ | :--------------------------------------------------------------------------- |
 | v    | `v`     | Enter visual mode, followed by vim movement (examples: `v$`, `v^`, or `v8j`) |
-| v    | `<S-V>` | Select line                                                                  |
+| v    | `V`     | Select line                                                                  |
 | v    | `ggVG`  | Select all                                                                   |
 | v    | `viw`   | Inner word (select word)                                                     |
 | v    | `vib`   | Inner block (select block)                                                   |
@@ -254,7 +254,7 @@ Leader key: `Spacebar`
 | n    | `<CR>`       | Open directory or file                  |
 | n    | `a`          | Add file                                |
 | n    | `d`          | Delete file                             |
-| n    | `<S-P>`      | Preview file                            |
+| n    | `P`          | Preview file                            |
 | n    | `?`          | Help                                    |
 
 #### Errors
