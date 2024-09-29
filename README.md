@@ -255,6 +255,7 @@ Leader key: `Spacebar`
 | n    | `a`          | Add file                                |
 | n    | `d`          | Delete file                             |
 | n    | `P`          | Preview file                            |
+| n    | `H`          | Toggle hidden files                     |
 | n    | `?`          | Help                                    |
 
 #### Errors
