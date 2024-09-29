@@ -290,16 +290,16 @@ Leader key: `Spacebar`
 
 #### Copilot
 
-| Mode | Input            | Action              |
-| :--- | :--------------- | :------------------ |
-| nv   | `<leader> a`     | Copilot             |
-| nv   | `<leader> aa`    | Toggle Copilot chat |
-| nv   | `<leader> ad`    | Diagnostic help     |
-| nv   | `<leader> ap`    | Prompt actions      |
-| nv   | `<leader> aq`    | Quick chat          |
-| nv   | `<leader> ax`    | Clear chat          |
-| n    | :Copilot enable  | Enable Copilot      |
-| n    | :Copilot disable | Disable Copilot     |
+| Mode | Input              | Action              |
+| :--- | :----------------- | :------------------ |
+| nv   | `<leader> a`       | Copilot             |
+| nv   | `<leader> aa`      | Toggle Copilot chat |
+| nv   | `<leader> ad`      | Diagnostic help     |
+| nv   | `<leader> ap`      | Prompt actions      |
+| nv   | `<leader> aq`      | Quick chat          |
+| nv   | `<leader> ax`      | Clear chat          |
+| n    | `:Copilot enable`  | Enable Copilot      |
+| n    | `:Copilot disable` | Disable Copilot     |
 
 #### Information
 
