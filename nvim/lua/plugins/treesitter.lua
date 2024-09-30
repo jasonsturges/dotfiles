@@ -16,6 +16,7 @@ return {
         "glsl",
         "graphql",
         "html",
+        "http",
         "javascript",
         "jsdoc",
         "json",
