@@ -230,6 +230,7 @@ Leader key: `Spacebar`
 | :-- | :------------ | :-------------------------------- |
 | n   | `<leader> st` | Todos: All todos in the workspace |
 | n   | `<leader> xt` | Todo (Trouble)                    |
+| n   | `<leader> xT` | Todo/Fix/Fixme (Workspace)        |
 | n   | `[t`          | Previous Todo                     |
 | n   | `]t`          | Next Todo                         |
 
@@ -260,12 +261,12 @@ Leader key: `Spacebar`
 
 #### Errors
 
-| Mode | Input         | Action                            |
-| :--- | :------------ | :-------------------------------- |
-| n    | `<leader> xx` | Document diagnostics: error list  |
-| n    | `<leader> xX` | Workspace diagnostics: error list |
-| n    | `<leader> sq` | Quickfix list                     |
-| n    | `<leader> xq` | Quickfix list                     |
+| Mode | Input         | Action                         |
+| :--- | :------------ | :----------------------------- |
+| n    | `<leader> xx` | Diagnostics: error list        |
+| n    | `<leader> xX` | Buffer diagnostics: error list |
+| n    | `<leader> sq` | Quickfix list                  |
+| n    | `<leader> xq` | Quickfix list                  |
 
 #### TODOs
 
