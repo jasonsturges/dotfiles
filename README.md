@@ -318,6 +318,7 @@ Leader key: `Spacebar`
 | n    | `<leader> fT` | Terminal (cwd)      |
 | n    | :terminal     | Open terminal       |
 | n    | `<C-\> <C-n>` | Exit terminal       |
+| n    | `<C-/>`       | Toggle terminal     |
 
 #### Package Info
 
