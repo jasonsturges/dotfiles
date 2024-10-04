@@ -140,21 +140,25 @@ Leader key: `Spacebar`
 | n    | `gcO`         | Comment above the current line                    |
 | v    | `>`           | Indent                                            |
 | v    | `<`           | Outdent                                           |
-| n    | `<leader> cr` | Rename                                            |
+| nv   | `<leader> ca` | Code action                                       |
+| n    | `<leader> cA` | Souce action                                      |
+| n    | `<leader> co` | Organize imports                                  |
+| n    | `<leader> cM` | Add missing imports                               |
+| n    | `<leader> cu` | Remove unused imports                             |
 | nv   | `<leader> cf` | Format                                            |
+| n    | `<leader> cr` | Rename                                            |
+| n    | `<leader> cR` | Rename file                                       |
+| n    | `<leader> cp` | Markdown preview                                  |
 | n    | `<leader> uf` | Toggle auto format (Global)                       |
 | n    | `<leader> uF` | Toggle auto format (Buffer)                       |
 | n    | `<leader> us` | Toggle spelling                                   |
 | n    | `<leader> uw` | Toggle word wrap                                  |
 | n    | `<leader> ul` | Toggle line numbers                               |
 | n    | `<leader> uL` | Toggle relative line numbers                      |
-| nv   | `<leader> ca` | Code actions                                      |
 | nv   | `<C-n>`       | Autocompletion select from dropdown               |
 | inxs | `<C-c>`       | Exit insert mode                                  |
 | inxs | `<C-s>`       | Save file                                         |
 | n    | `<leader> fn` | New file                                          |
-| n    | `<leader> cR` | Rename file                                       |
-| n    | `<leader> cp` | Markdown preview                                  |
 
 #### Selecting
 
