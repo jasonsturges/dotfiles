@@ -339,6 +339,7 @@ Leader key: `Spacebar`
 
 | Input         | Action                                         |
 | :------------ | :--------------------------------------------- |
+| :             | Command line mode                              |
 | `<leader> sC` | Commands                                       |
 | `<leader> :`  | Command history                                |
 | `<C-u>`       | Remove all characters (clear the command line) |
