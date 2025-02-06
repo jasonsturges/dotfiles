@@ -1,5 +1,5 @@
 {
-  "CopilotChat.nvim": { "branch": "main", "commit": "058b8d3a922255a94da9dc5fab220fd7d7ea9fe9" },
+  "CopilotChat.nvim": { "branch": "main", "commit": "834ba1bc71e1a146831be0ebfeb456ad252c3c56" },
   "LazyVim": { "branch": "main", "commit": "eb8ddea8c9438c34e71db097eb77a44185dd1093" },
   "SchemaStore.nvim": { "branch": "main", "commit": "a5a94907ea85e35a359be0763233e9055a325d36" },
   "aerial.nvim": { "branch": "master", "commit": "2aeafd99937602fc40609ffffbdd2f99d77343e9" },
@@ -38,7 +38,7 @@
   "plenary.nvim": { "branch": "master", "commit": "3707cdb1e43f5cea73afb6037e6494e7ce847a66" },
   "refactoring.nvim": { "branch": "master", "commit": "2db6d378e873de31d18ade549c2edba64ff1c2e3" },
   "render-markdown.nvim": { "branch": "main", "commit": "2a9e0ab6043bfb4996ce6a6a35594ab357e5d299" },
-  "snacks.nvim": { "branch": "main", "commit": "1bbc8f90fd9a7e62015094ae61d28f1640a3fbfd" },
+  "snacks.nvim": { "branch": "main", "commit": "f821b4a846647ef8aed2d382dfd10edfa7d4fb2c" },
   "solarized-osaka.nvim": { "branch": "main", "commit": "a655760409ec0e75a0868ca983f6077bf3c230f5" },
   "tabout.nvim": { "branch": "master", "commit": "9a3499480a8e53dcaa665e2836f287e3b7764009" },
   "todo-comments.nvim": { "branch": "main", "commit": "304a8d204ee787d2544d8bc23cd38d2f929e7cc5" },
