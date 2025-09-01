@@ -4,6 +4,14 @@
 
 Personal dotfiles of development environment
 
+## Installation
+
+```sh
+./dotfiles install    # New machine setup
+./dotfiles backup     # Save current configs
+./dotfiles update     # Commit and push changes
+```
+
 ## Neovim
 
 Configuration for Neovim, Vim-based text editor.
