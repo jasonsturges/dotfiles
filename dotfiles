@@ -1,0 +1,130 @@
+#!/usr/bin/env bash
+
+# Dotfiles management script
+# Usage: ./dotfiles.sh [install|backup|update]
+
+set -e
+
+DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+BACKUP_DIR="$HOME/.dotfiles_backup_$(date +%Y%m%d_%H%M%S)"
+
+# Define your dotfiles as source:destination pairs
+declare -A DOTFILES=(
+    ["zshrc"]="$HOME/.zshrc"
+    ["gitconfig"]="$HOME/.gitconfig"
+    ["tmux.conf"]="$HOME/.tmux.conf"
+    ["vimrc"]="$HOME/.vimrc"
+    ["config/nvim"]="$HOME/.config/nvim"
+    ["config/alacritty"]="$HOME/.config/alacritty"
+)
+
+create_symlink() {
+    local src="$DOTFILES_DIR/$1"
+    local dest="$2"
+    local dest_dir="$(dirname "$dest")"
+    
+    # Create destination directory if it doesn't exist
+    mkdir -p "$dest_dir"
+    
+    # Backup existing file/directory if it exists and isn't a symlink
+    if [[ -e "$dest" && ! -L "$dest" ]]; then
+        echo "Backing up existing $dest"
+        mkdir -p "$BACKUP_DIR"
+        mv "$dest" "$BACKUP_DIR/"
+    fi
+    
+    # Remove existing symlink
+    [[ -L "$dest" ]] && rm "$dest"
+    
+    # Create new symlink
+    ln -sf "$src" "$dest"
+    echo "✓ Linked $src → $dest"
+}
+
+install_dotfiles() {
+    echo "Installing dotfiles..."
+    
+    for src in "${!DOTFILES[@]}"; do
+        dest="${DOTFILES[$src]}"
+        
+        if [[ -f "$DOTFILES_DIR/$src" || -d "$DOTFILES_DIR/$src" ]]; then
+            create_symlink "$src" "$dest"
+        else
+            echo "⚠ Warning: $DOTFILES_DIR/$src not found, skipping"
+        fi
+    done
+    
+    echo -e "\n✅ Dotfiles installation complete!"
+    [[ -d "$BACKUP_DIR" ]] && echo "📦 Backups stored in: $BACKUP_DIR"
+}
+
+backup_dotfiles() {
+    echo "Backing up current dotfiles to repository..."
+    
+    for src in "${!DOTFILES[@]}"; do
+        source_file="${DOTFILES[$src]}"
+        dest_file="$DOTFILES_DIR/$src"
+        dest_dir="$(dirname "$dest_file")"
+        
+        if [[ -f "$source_file" || -d "$source_file" ]]; then
+            mkdir -p "$dest_dir"
+            cp -r "$source_file" "$dest_file"
+            echo "✓ Backed up $source_file → $dest_file"
+        else
+            echo "⚠ $source_file not found, skipping"
+        fi
+    done
+    
+    echo -e "\n✅ Backup complete!"
+}
+
+update_dotfiles() {
+    echo "Updating dotfiles repository..."
+    cd "$DOTFILES_DIR"
+    
+    if git rev-parse --git-dir > /dev/null 2>&1; then
+        git add .
+        git commit -m "Update dotfiles - $(date)"
+        git push
+        echo "✅ Dotfiles updated and pushed to repository"
+    else
+        echo "⚠ Not a git repository. Initialize with: git init"
+    fi
+}
+
+show_help() {
+    echo "Dotfiles Management Script"
+    echo ""
+    echo "Usage: $0 [command]"
+    echo ""
+    echo "Commands:"
+    echo "  install    Install dotfiles (create symlinks)"
+    echo "  backup     Backup current configs to repository"
+    echo "  update     Commit and push changes to repository"
+    echo "  help       Show this help message"
+    echo ""
+    echo "Structure your dotfiles directory like this:"
+    echo "  dotfiles/"
+    echo "  ├── zshrc"
+    echo "  ├── gitconfig"
+    echo "  ├── tmux.conf"
+    echo "  └── config/"
+    echo "      ├── nvim/"
+    echo "      └── alacritty/"
+}
+
+case "${1:-help}" in
+    install)
+        install_dotfiles
+        ;;
+    backup)
+        backup_dotfiles
+        ;;
+    update)
+        update_dotfiles
+        ;;
+    help|*)
+        show_help
+        ;;
+esac
+
