@@ -173,10 +173,22 @@ Install [Neovim](https://neovim.io/):
 brew install neovim
 ```
 
-Install lazygit:
+Install [lazygit](https://github.com/jesseduffield/lazygit):
 
 ```shell
 brew install lazygit
+```
+
+Install [ripgrep](https://github.com/BurntSushi/ripgrep) (used for live grep)
+
+```shell
+brew install ripgrep
+```
+
+Install [fd](https://github.com/sharkdp/fd) (used by Telescope for find)
+
+```shell
+brew install fd
 ```
 
 ## Neovim
