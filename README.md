@@ -1,12 +1,12 @@
-# dotfiles
+# Dotfiles Management
+
+A simple script to manage your macOS configuration files using symlinks and git.
 
 <img width="1526" alt="screen-capture" src="https://github.com/jasonsturges/dotfiles/assets/1213591/b6ddbaa5-a373-48ac-baf8-819e658796af">
 
-Personal dotfiles of development environment
-
 ## Getting Started
 
-Backup and commit dotfiles changes via:
+Execute `dotfiles` with the following:
 
 ```sh
 ./dotfiles install    # New machine setup
@@ -14,7 +14,73 @@ Backup and commit dotfiles changes via:
 ./dotfiles update     # Commit and push changes
 ```
 
-## Installation
+Either `install` to create symlinks making the repository the source of truth; or, manually `backup` to copy configs to the repository.
+
+### On Your Current Machine (First Time Setup)
+```bash
+# 1. Copy your current configs into this repository
+./dotfiles.sh backup
+
+# 2. Commit them to git
+git add .
+git commit -m "Initial dotfiles backup"
+git push
+
+# 3. Switch to symlink-based management
+./dotfiles.sh install
+```
+
+### On a New Machine
+```bash
+# 1. Clone this repository
+git clone <your-repo-url> ~/dotfiles
+cd ~/dotfiles
+
+# 2. Install dotfiles BEFORE installing applications
+./dotfiles.sh install
+
+# 3. Now install your applications (Neovim, tmux, etc.)
+# They'll automatically use your configurations!
+```
+
+## Daily Usage
+
+Once installed, just edit your configs normally:
+```bash
+nvim ~/.config/nvim/init.lua  # This actually edits the repo file
+```
+
+When you're ready to save changes:
+```bash
+./dotfiles.sh update  # Quick commit and push
+# OR use git directly for better commit messages
+```
+
+## Alternative: Manual Backup Approach
+
+If you prefer not to use symlinks, you can use this as a traditional backup script:
+
+```bash
+# Keep your configs as regular files in your home directory
+# Manually backup whenever you want to save changes
+./dotfiles.sh backup
+
+# Commit when ready
+git add .
+git commit -m "Updated configs"
+git push
+```
+
+**Note:** This approach requires you to remember to backup manually and doesn't provide automatic version tracking of your changes.
+
+## Important Notes
+
+- **Run `install` first on new machines** - before launching any applications
+- **You only need `backup` once** during initial setup (when using symlinks)
+- **After install, all edits happen directly in the repo** via symlinks
+- **Your repository becomes the source of truth** for all configurations
+
+## Environment
 
 Install [Kitty](https://sw.kovidgoyal.net/kitty/) terminal:
 
