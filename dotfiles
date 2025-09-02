@@ -9,13 +9,14 @@ DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 BACKUP_DIR="$HOME/.dotfiles_backup_$(date +%Y%m%d_%H%M%S)"
 
 # Define your dotfiles as source:destination pairs
-declare -A DOTFILES=(
-    ["zshrc"]="$HOME/.zshrc"
-    ["gitconfig"]="$HOME/.gitconfig"
-    ["tmux.conf"]="$HOME/.tmux.conf"
-    ["vimrc"]="$HOME/.vimrc"
-    ["config/nvim"]="$HOME/.config/nvim"
-    ["config/alacritty"]="$HOME/.config/alacritty"
+DOTFILES_LIST=(
+    "zshrc:$HOME/.zshrc"
+    "gitconfig:$HOME/.gitconfig"
+    "gitignore-global:$HOME/.gitignore-global"
+    "tmux.conf:$HOME/.tmux.conf"
+    "vimrc:$HOME/.vimrc"
+    "config/nvim:$HOME/.config/nvim"
+    "config/alacritty:$HOME/.config/alacritty"
 )
 
 create_symlink() {
@@ -44,8 +45,9 @@ create_symlink() {
 install_dotfiles() {
     echo "Installing dotfiles..."
     
-    for src in "${!DOTFILES[@]}"; do
-        dest="${DOTFILES[$src]}"
+    for entry in "${DOTFILES_LIST[@]}"; do
+        src="${entry%%:*}"
+        dest="${entry#*:}"
         
         if [[ -f "$DOTFILES_DIR/$src" || -d "$DOTFILES_DIR/$src" ]]; then
             create_symlink "$src" "$dest"
@@ -61,8 +63,9 @@ install_dotfiles() {
 backup_dotfiles() {
     echo "Backing up current dotfiles to repository..."
     
-    for src in "${!DOTFILES[@]}"; do
-        source_file="${DOTFILES[$src]}"
+    for entry in "${DOTFILES_LIST[@]}"; do
+        src="${entry%%:*}"
+        source_file="${entry#*:}"
         dest_file="$DOTFILES_DIR/$src"
         dest_dir="$(dirname "$dest_file")"
         
