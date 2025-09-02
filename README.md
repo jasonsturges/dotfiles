@@ -4,12 +4,34 @@
 
 Personal dotfiles of development environment
 
-## Installation
+## Getting Started
+
+Backup and commit dotfiles changes via:
 
 ```sh
 ./dotfiles install    # New machine setup
 ./dotfiles backup     # Save current configs
 ./dotfiles update     # Commit and push changes
+```
+
+## Installation
+
+Install [Kitty](https://sw.kovidgoyal.net/kitty/) terminal:
+
+```sh
+curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
+```
+
+Install [Nerd Fonts](https://www.nerdfonts.com/):
+
+```sh
+brew install --cask font-jetbrains-mono-nerd-font
+```
+
+Install [Neovim](https://neovim.io/):
+
+```sh
+brew install neovim
 ```
 
 ## Neovim
