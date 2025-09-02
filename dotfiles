@@ -12,6 +12,7 @@ BACKUP_DIR="$HOME/.dotfiles_backup_$(date +%Y%m%d_%H%M%S)"
 DOTFILES_LIST=(
     "zshrc:$HOME/.zshrc"
     "gitconfig:$HOME/.gitconfig"
+    "gitignore-global:$HOME/.gitignore-global"
     "tmux.conf:$HOME/.tmux.conf"
     "vimrc:$HOME/.vimrc"
     "config/nvim:$HOME/.config/nvim"
