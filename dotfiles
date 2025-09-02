@@ -10,11 +10,11 @@ BACKUP_DIR="$HOME/.dotfiles_backup_$(date +%Y%m%d_%H%M%S)"
 
 # Define your dotfiles as source:destination pairs
 DOTFILES_LIST=(
-    "zshrc:$HOME/.zshrc"
-    "gitconfig:$HOME/.gitconfig"
-    "gitignore-global:$HOME/.gitignore-global"
-    "tmux.conf:$HOME/.tmux.conf"
-    "config/nvim:$HOME/.config/nvim"
+    "zsh/zshrc:$HOME/.zshrc"
+    "git/gitconfig:$HOME/.gitconfig"
+    "git/gitignore-global:$HOME/.gitignore-global"
+    "tmux/tmux.conf:$HOME/.tmux.conf"
+    "nvim:$HOME/.config/nvim"
 )
 
 create_symlink() {
@@ -106,12 +106,15 @@ show_help() {
     echo ""
     echo "Structure your dotfiles directory like this:"
     echo "  dotfiles/"
-    echo "  ├── zshrc"
-    echo "  ├── gitconfig"
-    echo "  ├── tmux.conf"
-    echo "  └── config/"
-    echo "      ├── nvim/"
-    echo "      └── alacritty/"
+    echo "  ├── git/"
+    echo "  │   ├── gitconfig"
+    echo "  │   └── gitignore-global"
+    echo "  ├── zsh/"
+    echo "  │   └── zshrc"
+    echo "  ├── tmux/"
+    echo "  │   └── tmux.conf"
+    echo "  └── nvim/"
+    echo "      └── (Neovim config files)"
 }
 
 case "${1:-help}" in
