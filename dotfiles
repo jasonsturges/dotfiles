@@ -14,9 +14,7 @@ DOTFILES_LIST=(
     "gitconfig:$HOME/.gitconfig"
     "gitignore-global:$HOME/.gitignore-global"
     "tmux.conf:$HOME/.tmux.conf"
-    "vimrc:$HOME/.vimrc"
     "config/nvim:$HOME/.config/nvim"
-    "config/alacritty:$HOME/.config/alacritty"
 )
 
 create_symlink() {

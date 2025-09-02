@@ -23,7 +23,7 @@ This script simplifies managing dotfiles (configuration files) by either:
 - **Symlink-based management**: Run `./dotfiles install` to create symlinks from your home directory to the Git repository, making the repository the source of truth. Changes to your configs are instantly reflected in the repository, enabling real-time version control.
 - **Manual backup**: Run `./dotfiles backup` to copy your configuration files to the repository for manual tracking without symlinks.
 
-Supported dotfiles include configurations for `zsh`, `git`, `tmux`, `vim`, `nvim`, and `alacritty`.
+Supported dotfiles include configurations for `zsh`, `git`, `tmux`, and `nvim`.
 
 ## Prerequisites
 
