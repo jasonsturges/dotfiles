@@ -69,7 +69,15 @@ backup_dotfiles() {
         dest_dir="$(dirname "$dest_file")"
         
         if [[ -f "$source_file" || -d "$source_file" ]]; then
+            # Skip backup if source is a symlink (indicates install mode is active)
+            if [[ -L "$source_file" ]]; then
+                echo "⚠ $source_file is a symlink (install mode), skipping backup"
+                continue
+            fi
+            
             mkdir -p "$dest_dir"
+            # Remove existing destination to prevent nesting
+            [[ -e "$dest_file" ]] && rm -rf "$dest_file"
             cp -r "$source_file" "$dest_file"
             echo "✓ Backed up $source_file → $dest_file"
         else
