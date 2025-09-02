@@ -15,6 +15,9 @@ A simple Bash script to manage macOS configuration files using Git and symlinks.
 - [Manual Backup Approach](#manual-backup-approach)
 - [Important Notes](#important-notes)
 - [Troubleshooting](#troubleshooting)
+- [Environment](#environment)
+- [Neovim](#neovim)
+- [TMUX](#tmux)
 
 ## Overview
 
@@ -179,13 +182,13 @@ Install [lazygit](https://github.com/jesseduffield/lazygit):
 brew install lazygit
 ```
 
-Install [ripgrep](https://github.com/BurntSushi/ripgrep) (used for live grep)
+Install [ripgrep](https://github.com/BurntSushi/ripgrep) (used for live grep):
 
 ```shell
 brew install ripgrep
 ```
 
-Install [fd](https://github.com/sharkdp/fd) (used by Telescope for find)
+Install [fd](https://github.com/sharkdp/fd) (used by Telescope for find):
 
 ```shell
 brew install fd
