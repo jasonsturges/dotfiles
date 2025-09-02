@@ -13,6 +13,7 @@ DOTFILES_LIST=(
     "zsh/zshrc:$HOME/.zshrc"
     "git/gitconfig:$HOME/.gitconfig"
     "git/gitignore-global:$HOME/.gitignore-global"
+    "kitty/kitty.conf:$HOME/.config/kitty/kitty.conf"
     "tmux/tmux.conf:$HOME/.tmux.conf"
     "nvim:$HOME/.config/nvim"
 )
