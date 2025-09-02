@@ -7,7 +7,6 @@ A simple Bash script to manage macOS configuration files using Git and symlinks.
 ## Table of Contents
 
 - [Overview](#overview)
-- [Prerequisites](#prerequisites)
 - [Getting Started](#getting-started)
     - [First-Time Setup on Your Current Machine](#first-time-setup-on-your-current-machine)
     - [Setup on a New Machine](#setup-on-a-new-machine)
@@ -25,16 +24,6 @@ This script simplifies managing dotfiles (configuration files) by either:
 
 - **Symlink-based management**: Run `./dotfiles install` to create symlinks from your home directory to the Git repository, making the repository the source of truth. Changes to your configs are instantly reflected in the repository, enabling real-time version control.
 - **Manual backup**: Run `./dotfiles backup` to copy your configuration files to the repository for manual tracking without symlinks.
-
-Supported dotfiles include configurations for `zsh`, `git`, `tmux`, and `nvim`.
-
-## Prerequisites
-
-- **Git**: Ensure Git is installed and configured (`git --version`).
-- **Bash**: The script requires a Bash-compatible shell.
-- **macOS**: The script is designed for macOS, though it may work on other Unix-like systems with modifications.
-- **Permissions**: Ensure the script is executable (`chmod +x dotfiles.sh`).
-- **Repository**: Clone or initialize a Git repository in `~/dotfiles`.
 
 ## Getting Started
 
