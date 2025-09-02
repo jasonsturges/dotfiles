@@ -173,6 +173,12 @@ Install [Neovim](https://neovim.io/):
 brew install neovim
 ```
 
+Install lazygit:
+
+```shell
+brew install lazygit
+```
+
 ## Neovim
 
 Configuration for Neovim, Vim-based text editor.
