@@ -1,0 +1,23 @@
+# JetBrains IDEs
+## Directory-based project format
+.idea/
+## File-based project format
+_.ipr
+_.iws
+\*.iml
+
+# Visual Studio Code
+.vscode/
+.vs/
+
+# Mac
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Claude Code AI files
+.claude/
+CLAUDE.md
+.claude-*
+
