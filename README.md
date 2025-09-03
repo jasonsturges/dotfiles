@@ -341,23 +341,27 @@ Leader key: `Spacebar`
 
 #### Selecting
 
-| Mode | Input  | Action                                                                       |
-| :--- | :----- | :--------------------------------------------------------------------------- |
-| v    | `v`    | Enter visual mode, followed by vim movement (examples: `v$`, `v^`, or `v8j`) |
-| v    | `V`    | Select line                                                                  |
-| v    | `ggVG` | Select all                                                                   |
-| v    | `viw`  | Inner word (select word)                                                     |
-| v    | `vib`  | Inner block (select block)                                                   |
-| v    | `vit`  | Inner tag block                                                              |
-| v    | `vi"`  | Inner quotes (select everything inside of `"` quotes)                        |
-| v    | `vi{`  | Inner braces (select everything inside of `{}` braces)                       |
-| v    | `vi[`  | Inner brackets (select everything inside of `[]` brackets)                   |
-| v    | `vaw`  | Outer word (select word)                                                     |
-| v    | `vab`  | Outer block (select block)                                                   |
-| v    | `vat`  | Outer tag block                                                              |
-| v    | `va"`  | Outer quotes (select everything including `"` quotes)                        |
-| v    | `va{`  | Outer braces (select everything including `{}` braces)                       |
-| v    | `va[`  | Outer brackets (select everything including `[]` brackets)                   |
+| Mode | Input      | Action                                                                       |
+| :--- | :--------- | :--------------------------------------------------------------------------- |
+| v    | `v`        | Enter visual mode, followed by vim movement (examples: `v$`, `v^`, or `v8j`) |
+| v    | `V`        | Select line                                                                  |
+| v    | `ggVG`     | Select all                                                                   |
+| v    | `viw`      | Inner word (select word)                                                     |
+| v    | `vib`      | Inner block (select block)                                                   |
+| v    | `vit`      | Inner tag block                                                              |
+| v    | `vi"`      | Inner quotes (select everything inside of `"` quotes)                        |
+| v    | `vi{`      | Inner braces (select everything inside of `{}` braces)                       |
+| v    | `vi[`      | Inner brackets (select everything inside of `[]` brackets)                   |
+| v    | `vaw`      | Outer word (select word)                                                     |
+| v    | `vab`      | Outer block (select block)                                                   |
+| v    | `vat`      | Outer tag block                                                              |
+| v    | `va"`      | Outer quotes (select everything including `"` quotes)                        |
+| v    | `va{`      | Outer braces (select everything including `{}` braces)                       |
+| v    | `va[`      | Outer brackets (select everything including `[]` brackets)                   |
+| v    | `vt{char}` | Select until character (exclusive)                                           |
+| v    | `vf{char}` | Select until and including character (inclusive)                             |
+| v    | `vT{char}` | Select backwards until character (exclusive)                                 |
+| v    | `vF{char}` | Select backwards until and including character (inclusive)                   |
 
 #### Copying and moving text
 
