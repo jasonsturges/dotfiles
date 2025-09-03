@@ -87,7 +87,7 @@ To set up dotfiles on a new machine:
     ./dotfiles.sh install
     ```
     
-3. **Install your applications** (e.g., Neovim, tmux, Alacritty). They will automatically use the symlinked configurations.
+3. **Install your applications** (e.g., Neovim, tmux, Kitty). They will automatically use the symlinked configurations.
     
 
 ## Daily Usage
