@@ -229,9 +229,9 @@ Neovim key mapping, based on macOS.
 | `:vsplit \| terminal` | Open terminal in vertical split                         |
 | `:tabnew \| terminal` | Open terminal in new tab                                |
 
-Leader key: `Spacebar`
-
 #### LazyVim and plugins
+
+Leader key: `Spacebar`
 
 | Mode | Input         | Action                                           |
 | :--- | :------------ | :----------------------------------------------- |
