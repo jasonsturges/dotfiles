@@ -243,6 +243,9 @@ Neovim key mapping, based on macOS.
 | `:split \| terminal`  | Open terminal in horizontal split                       |
 | `:vsplit \| terminal` | Open terminal in vertical split                         |
 | `:tabnew \| terminal` | Open terminal in new tab                                |
+| `:set wrap`           | Enable word wrap                                        |
+| `:set nowrap`         | Disable word wrap                                       |
+| `:set wrap!`          | Toggle word wrap on/off                                 |
 
 #### LazyVim and plugins
 
