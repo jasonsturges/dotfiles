@@ -183,6 +183,18 @@ Install [fd](https://github.com/sharkdp/fd) (used by Telescope for find):
 brew install fd
 ```
 
+Install fzf (used for fuzzy finder by Telescope):
+
+```shell
+brew install fzf
+```
+
+Install wget:
+
+```shell
+brew install wget
+```
+
 ## Neovim
 
 Configuration for Neovim, Vim-based text editor.
