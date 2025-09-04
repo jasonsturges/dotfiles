@@ -320,7 +320,7 @@ Leader key: `Spacebar`
 | v    | `>`           | Indent                                            |
 | v    | `<`           | Outdent                                           |
 | nv   | `<leader> ca` | Code action                                       |
-| n    | `<leader> cA` | Souce action                                      |
+| n    | `<leader> cA` | Source action                                     |
 | n    | `<leader> co` | Organize imports                                  |
 | n    | `<leader> cM` | Add missing imports                               |
 | n    | `<leader> cu` | Remove unused imports                             |
@@ -413,13 +413,13 @@ Leader key: `Spacebar`
 
 #### TODOs
 
-| M   | Input         | Action                            |
-| :-- | :------------ | :-------------------------------- |
-| n   | `<leader> st` | Todos: All todos in the workspace |
-| n   | `<leader> xt` | Todo (Trouble)                    |
-| n   | `<leader> xT` | Todo/Fix/Fixme (Workspace)        |
-| n   | `[t`          | Previous Todo                     |
-| n   | `]t`          | Next Todo                         |
+| Mode | Input         | Action                            |
+| :--- | :------------ | :-------------------------------- |
+| n    | `<leader> st` | Todos: All todos in the workspace |
+| n    | `<leader> xt` | Todo (Trouble)                    |
+| n    | `<leader> xT` | Todo/Fix/Fixme (Workspace)        |
+| n    | `[t`          | Previous Todo                     |
+| n    | `]t`          | Next Todo                         |
 
 #### Code Folding
 
@@ -510,13 +510,13 @@ Leader key: `Spacebar`
 
 #### Package Info
 
-| Mode | Input         | Action                              |
-| :--- | :------------ | :---------------------------------- |
-| n    | `<leader> ni` | Install a new dependency            |
-| n    | `<leader> nu` | Update dependency on line           |
-| n    | `<leader> ns` | Show dependency versions            |
-| n    | `<leader> nc` | Instal different dependency version |
-| n    | `<leader> nd` | Delete dependency on line           |
+| Mode | Input         | Action                               |
+| :--- | :------------ | :----------------------------------- |
+| n    | `<leader> ni` | Install a new dependency             |
+| n    | `<leader> nu` | Update dependency on line            |
+| n    | `<leader> ns` | Show dependency versions             |
+| n    | `<leader> nc` | Install different dependency version |
+| n    | `<leader> nd` | Delete dependency on line            |
 
 #### Command line
 
