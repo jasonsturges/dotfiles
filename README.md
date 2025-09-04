@@ -200,30 +200,34 @@ Neovim key mapping, based on macOS.
 
 #### Commands
 
-| Command              | Description                                             |
-| :------------------- | :------------------------------------------------------ |
-| `:map`               | Show all key mappings for all modes                     |
-| `:map <key>`         | Show mapping for specific key (e.g., `:map <leader>xt`) |
-| `:nmap`              | Show normal mode mappings only                          |
-| `:imap`              | Show insert mode mappings only                          |
-| `:vmap`              | Show visual mode mappings only                          |
-| `:verbose map <key>` | Show mapping with source file location                  |
-| `:help`              | Open help system                                        |
-| `:help <topic>`      | Get help on specific topic                              |
-| `:WhichKey`          | Show available keybindings (LazyVim)                    |
-| `:Lazy`              | Open plugin manager                                     |
-| `:Mason`             | Open LSP/tool installer                                 |
-| `:checkhealth`       | Run health checks for plugins/config                    |
-| `:LspInfo`           | Show LSP client information                             |
-| `:Telescope keymaps` | Browse all keymaps in Telescope                         |
-| `:messages`          | Show recent messages/errors                             |
-| `:pwd`               | Show current working directory                          |
-| `:cd <path>`         | Change working directory                                |
-| `:e <file>`          | Edit/open file                                          |
-| `:w`                 | Write/save current file                                 |
-| `:q`                 | Quit current window                                     |
-| `:qa`                | Quit all windows                                        |
-| `:wq`                | Write and quit                                          |
+| Command               | Description                                             |
+| :-------------------- | :------------------------------------------------------ |
+| `:map`                | Show all key mappings for all modes                     |
+| `:map <key>`          | Show mapping for specific key (e.g., `:map <leader>xt`) |
+| `:nmap`               | Show normal mode mappings only                          |
+| `:imap`               | Show insert mode mappings only                          |
+| `:vmap`               | Show visual mode mappings only                          |
+| `:verbose map <key>`  | Show mapping with source file location                  |
+| `:help`               | Open help system                                        |
+| `:help <topic>`       | Get help on specific topic                              |
+| `:WhichKey`           | Show available keybindings (LazyVim)                    |
+| `:Lazy`               | Open plugin manager                                     |
+| `:Mason`              | Open LSP/tool installer                                 |
+| `:checkhealth`        | Run health checks for plugins/config                    |
+| `:LspInfo`            | Show LSP client information                             |
+| `:Telescope keymaps`  | Browse all keymaps in Telescope                         |
+| `:messages`           | Show recent messages/errors                             |
+| `:pwd`                | Show current working directory                          |
+| `:cd <path>`          | Change working directory                                |
+| `:e <file>`           | Edit/open file                                          |
+| `:w`                  | Write/save current file                                 |
+| `:q`                  | Quit current window                                     |
+| `:qa`                 | Quit all windows                                        |
+| `:wq`                 | Write and quit                                          |
+| `:terminal`           | Open terminal in current window                         |
+| `:split \| terminal`  | Open terminal in horizontal split                       |
+| `:vsplit \| terminal` | Open terminal in vertical split                         |
+| `:tabnew \| terminal` | Open terminal in new tab                                |
 
 Leader key: `Spacebar`
 
@@ -523,11 +527,11 @@ Leader key: `Spacebar`
 
 | Mode | Input         | Action              |
 | :--- | :------------ | :------------------ |
-| n    | :terminal     | Open terminal       |
 | n    | `<leader> ft` | Terminal (root dir) |
 | n    | `<leader> fT` | Terminal (cwd)      |
 | n    | `<C-\> <C-n>` | Exit terminal       |
 | n    | `<C-/>`       | Toggle terminal     |
+| t    | `<esc><esc>`  | Enter normal mode   |
 
 #### Package Info
 
