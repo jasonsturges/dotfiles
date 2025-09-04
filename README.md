@@ -417,6 +417,7 @@ Leader key: `Spacebar`
 | :--- | :------------ | :-------------------------------- |
 | n    | `<leader> st` | Todos: All todos in the workspace |
 | n    | `<leader> xt` | Todo (Trouble)                    |
+| n    | `<leader> xt` | Todos: All todos in the workspace |
 | n    | `<leader> xT` | Todo/Fix/Fixme (Workspace)        |
 | n    | `[t`          | Previous Todo                     |
 | n    | `]t`          | Next Todo                         |
@@ -454,12 +455,6 @@ Leader key: `Spacebar`
 | n    | `<leader> xX` | Buffer diagnostics: error list |
 | n    | `<leader> sq` | Quickfix list                  |
 | n    | `<leader> xq` | Quickfix list                  |
-
-#### TODOs
-
-| Mode | Input         | Action                            |
-| :--- | :------------ | :-------------------------------- |
-| n    | `<leader> xt` | Todos: All todos in the workspace |
 
 #### Git
 
@@ -502,9 +497,9 @@ Leader key: `Spacebar`
 
 | Mode | Input         | Action              |
 | :--- | :------------ | :------------------ |
+| n    | :terminal     | Open terminal       |
 | n    | `<leader> ft` | Terminal (root dir) |
 | n    | `<leader> fT` | Terminal (cwd)      |
-| n    | :terminal     | Open terminal       |
 | n    | `<C-\> <C-n>` | Exit terminal       |
 | n    | `<C-/>`       | Toggle terminal     |
 
