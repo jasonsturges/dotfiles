@@ -226,9 +226,11 @@ Neovim key mapping, based on macOS.
 | `:Lazy`               | Open plugin manager                                     |
 | `:LazyExtras`         | Lazy extras                                             |
 | `:Mason`              | Open LSP/tool installer                                 |
-| `:checkhealth`        | Run health checks for plugins/config                    |
 | `:LspInfo`            | Show LSP client information                             |
+| :TSInstallInfo        | All available Treesitter language parsers               |
+| :TSInstall lang       | Install Treesitter parser for a specific language       |
 | `:Telescope keymaps`  | Browse all keymaps in Telescope                         |
+| `:checkhealth`        | Run health checks for plugins/config                    |
 | `:messages`           | Show recent messages/errors                             |
 | `:pwd`                | Show current working directory                          |
 | `:cd <path>`          | Change working directory                                |
