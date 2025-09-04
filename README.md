@@ -224,6 +224,7 @@ Neovim key mapping, based on macOS.
 | `:help <topic>`       | Get help on specific topic                              |
 | `:WhichKey`           | Show available keybindings (LazyVim)                    |
 | `:Lazy`               | Open plugin manager                                     |
+| `:LazyExtras`         | Lazy extras                                             |
 | `:Mason`              | Open LSP/tool installer                                 |
 | `:checkhealth`        | Run health checks for plugins/config                    |
 | `:LspInfo`            | Show LSP client information                             |
@@ -248,7 +249,6 @@ Leader key: `Spacebar`
 | Mode | Input         | Action                                           |
 | :--- | :------------ | :----------------------------------------------- |
 | n    | `<leader> l`  | Lazy                                             |
-| n    | `:LazyExtras` | Lazy extras                                      |
 | n    | `<leader> cm` | Mason: Language servers, linters, and formatters |
 | n    | `<leader> e`  | Neo-tree: File system tree sidebar               |
 | n    | `<leader> gg` | Lazygit: Terminal UI for git commands            |
