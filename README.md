@@ -40,20 +40,13 @@ Run the script with one of these commands:
 
 To start managing your dotfiles with this repository:
 
-1. **Clone or initialize the repository**:
+1. **Copy existing configs to the repository**:
 
    ```bash
-   git clone <your-repo-url> ~/dotfiles || mkdir -p ~/dotfiles && cd ~/dotfiles && git init
-   ```
-
-2. **Copy existing configs to the repository**:
-
-   ```bash
-   cd ~/dotfiles
    ./dotfiles.sh backup
    ```
 
-3. **Commit the configs**:
+2. **Commit the configs**:
 
    ```bash
    git add .
@@ -61,7 +54,7 @@ To start managing your dotfiles with this repository:
    git push
    ```
 
-4. **Switch to symlink-based management**:
+3. **Switch to symlink-based management**:
 
    ```bash
    ./dotfiles.sh install
@@ -73,20 +66,13 @@ This creates symlinks from your home directory to the repository, making it the 
 
 To set up dotfiles on a new machine:
 
-1. **Clone the repository**:
-
-   ```bash
-   git clone <your-repo-url> ~/dotfiles
-   cd ~/dotfiles
-   ```
-
-2. **Install dotfiles before launching applications**:
+1. **Install dotfiles before launching applications**:
 
    ```bash
    ./dotfiles.sh install
    ```
 
-3. **Install your applications** (e.g., Neovim, tmux, Kitty). They will automatically use the symlinked configurations.
+2. **Install your applications** (e.g., Neovim, tmux, Kitty). They will automatically use the symlinked configurations.
 
 ## Daily Usage
 
