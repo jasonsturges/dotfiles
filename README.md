@@ -8,8 +8,8 @@ A simple Bash script to manage macOS configuration files using Git and symlinks.
 
 - [Overview](#overview)
 - [Getting Started](#getting-started)
-    - [First-Time Setup on Your Current Machine](#first-time-setup-on-your-current-machine)
-    - [Setup on a New Machine](#setup-on-a-new-machine)
+  - [First-Time Setup on Your Current Machine](#first-time-setup-on-your-current-machine)
+  - [Setup on a New Machine](#setup-on-a-new-machine)
 - [Daily Usage](#daily-usage)
 - [Manual Backup Approach](#manual-backup-approach)
 - [Important Notes](#important-notes)
@@ -41,32 +41,31 @@ Run the script with one of these commands:
 To start managing your dotfiles with this repository:
 
 1. **Clone or initialize the repository**:
-    
-    ```bash
-    git clone <your-repo-url> ~/dotfiles || mkdir -p ~/dotfiles && cd ~/dotfiles && git init
-    ```
-    
+
+   ```bash
+   git clone <your-repo-url> ~/dotfiles || mkdir -p ~/dotfiles && cd ~/dotfiles && git init
+   ```
+
 2. **Copy existing configs to the repository**:
-    
-    ```bash
-    cd ~/dotfiles
-    ./dotfiles.sh backup
-    ```
-    
+
+   ```bash
+   cd ~/dotfiles
+   ./dotfiles.sh backup
+   ```
+
 3. **Commit the configs**:
-    
-    ```bash
-    git add .
-    git commit -m "Initial dotfiles backup"
-    git push
-    ```
-    
+
+   ```bash
+   git add .
+   git commit -m "Initial dotfiles backup"
+   git push
+   ```
+
 4. **Switch to symlink-based management**:
-    
-    ```bash
-    ./dotfiles.sh install
-    ```
-    
+
+   ```bash
+   ./dotfiles.sh install
+   ```
 
 This creates symlinks from your home directory to the repository, making it the source of truth.
 
@@ -75,20 +74,19 @@ This creates symlinks from your home directory to the repository, making it the 
 To set up dotfiles on a new machine:
 
 1. **Clone the repository**:
-    
-    ```bash
-    git clone <your-repo-url> ~/dotfiles
-    cd ~/dotfiles
-    ```
-    
+
+   ```bash
+   git clone <your-repo-url> ~/dotfiles
+   cd ~/dotfiles
+   ```
+
 2. **Install dotfiles before launching applications**:
-    
-    ```bash
-    ./dotfiles.sh install
-    ```
-    
+
+   ```bash
+   ./dotfiles.sh install
+   ```
+
 3. **Install your applications** (e.g., Neovim, tmux, Kitty). They will automatically use the symlinked configurations.
-    
 
 ## Daily Usage
 
@@ -114,19 +112,18 @@ If you prefer not to use symlinks, you can manually back up your configs:
 
 1. Keep your configuration files in their default locations (e.g., `~/.zshrc`).
 2. Run the backup command whenever you want to save changes:
-    
-    ```bash
-    ./dotfiles.sh backup
-    ```
-    
+
+   ```bash
+   ./dotfiles.sh backup
+   ```
+
 3. Commit and push the changes:
-    
-    ```bash
-    git add .
-    git commit -m "Updated configs"
-    git push
-    ```
-    
+
+   ```bash
+   git add .
+   git commit -m "Updated configs"
+   git push
+   ```
 
 **Note**: This approach requires manual backups and does not provide real-time version tracking.
 
@@ -143,7 +140,6 @@ If you prefer not to use symlinks, you can manually back up your configs:
 - **Missing dotfiles**: If a dotfile (e.g., `~/.zshrc`) is not found during `backup`, ensure it exists in your home directory.
 - **Git issues**: Verify your repository is properly initialized (`git init`) and configured with a remote (`git remote add origin <url>`).
 - **Application config not updating**: Confirm symlinks are correctly set up by running `ls -l` in `~/.config` or `~` to verify links point to the repository.
-
 
 ## Environment
 
