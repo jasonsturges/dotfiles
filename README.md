@@ -425,19 +425,26 @@ Leader key: `Spacebar`
 
 #### Searching and replacing
 
-| Mode | Input            | Action                                                   |
-| :--- | :--------------- | :------------------------------------------------------- |
-| n    | `\*`             | Search forward for the identifier under the cursor       |
-| n    | `#`              | Search backward for the identifier under the cursor      |
-| n    | `/`              | Search forward, repeat last search with `n`              |
-| n    | `?`              | Search backward, repeat last search with `N`             |
-| n    | `<leader> SPACE` | Find files from root directory                           |
-| n    | `<leader> fF`    | Find files from current working directory                |
-| n    | `<leader> /`     | Live grep: search in all files (also: `<leader> sg>`)    |
-| n    | `<leader> sG`    | Live grep: search in cwd                                 |
-| n    | `s`              | Flash: search window, use labels to jump to any location |
-| n    | `:s/old/new/g`   | Substitute `old` with `new` in the current line          |
-| n    | `:%s/old/new/g`  | Substitute `old` with `new` in the current file          |
+| Mode | Input           | Action                                                   |
+| :--- | :-------------- | :------------------------------------------------------- |
+| n    | `/pattern`      | Search forward for pattern                               |
+| n    | `?pattern`      | Search backward for pattern                              |
+| n    | `n`             | Go to next search match                                  |
+| n    | `N`             | Go to previous search match                              |
+| n    | `*`             | Search forward for word under cursor                     |
+| n    | `#`             | Search backward for word under cursor                    |
+| n    | `/<Enter>`      | Repeat last search                                       |
+| n    | `/<C-r><C-w>`   | Put word under cursor into search prompt                 |
+| n    | `:nohl`         | Clear search highlighting                                |
+| n    | `<leader> ff`   | Find files from root directory                           |
+| n    | `<leader> fF`   | Find files from current working directory                |
+| n    | `<leader> fr`   | Find recent files                                        |
+| n    | `<leader> fR`   | Find recent files (cwd)                                  |
+| n    | `<leader> sg`   | Live grep: search in all files                           |
+| n    | `<leader> sG`   | Live grep: search in cwd                                 |
+| n    | `s`             | Flash: search window, use labels to jump to any location |
+| n    | `:s/old/new/g`  | Substitute `old` with `new` in current line              |
+| n    | `:%s/old/new/g` | Substitute `old` with `new` in entire file               |
 
 #### Refactoring
 
