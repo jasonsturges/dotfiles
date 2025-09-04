@@ -417,8 +417,7 @@ Leader key: `Spacebar`
 | :--- | :------------ | :-------------------------------- |
 | n    | `<leader> st` | Todos: All todos in the workspace |
 | n    | `<leader> xt` | Todo (Trouble)                    |
-| n    | `<leader> xt` | Todos: All todos in the workspace |
-| n    | `<leader> xT` | Todo/Fix/Fixme (Workspace)        |
+| n    | `<leader> xT` | Todo (Telescope)                  |
 | n    | `[t`          | Previous Todo                     |
 | n    | `]t`          | Next Todo                         |
 
