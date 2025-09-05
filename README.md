@@ -496,16 +496,16 @@ Leader key: `Spacebar`
 
 | Mode | Input         | Action                   |
 | :--- | :------------ | :----------------------- |
-| n    | `<leader> gg` | Git                      |
-| n    | `<leader> gs` | Git status               |
-| n    | `<leader> ge` | Git explorer             |
-| n    | `<leader> gc` | Git commit history       |
+| n    | `<leader> gg` | Lazygit                  |
+| n    | `<leader> gG` | Lazygit (cwd)            |
 | n    | `<leader> gl` | Git log                  |
 | n    | `<leader> gL` | Git log (cwd)            |
+| n    | `<leader> gd` | Git diff (hunks)         |
 | n    | `<leader> gf` | Git current file history |
+| n    | `<leader> gS` | Git stash                |
 | n    | `<leader> gb` | Git blame line           |
-| n    | `<leader> fg` | Find git files           |
 | n    | `<leader> gB` | Open repo in the browser |
+| n    | `<leader> fg` | Find git files           |
 
 #### Copilot
 
