@@ -545,9 +545,12 @@ Leader key: `Spacebar`
 | :--- | :------------ | :----------------------------------- |
 | n    | `<leader> ni` | Install a new dependency             |
 | n    | `<leader> nu` | Update dependency on line            |
-| n    | `<leader> ns` | Show dependency versions             |
 | n    | `<leader> nc` | Install different dependency version |
 | n    | `<leader> nd` | Delete dependency on line            |
+| n    | `<leader> nh` | Hide dependency versions             |
+| n    | `<leader> ns` | Show dependency versions             |
+| n    | `<leader> nt` | Toggle dependency versions           |
+| n    | `<leader> nr` | Run npm script                       |
 
 #### Command line
 
