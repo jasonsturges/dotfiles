@@ -16,6 +16,7 @@ A simple Bash script to manage macOS configuration files using Git and symlinks.
 - [Troubleshooting](#troubleshooting)
 - [Environment](#environment)
 - [Neovim](#neovim)
+- [Lazygit](#Lazygit)
 - [TMUX](#tmux)
 
 ## Overview
@@ -413,7 +414,7 @@ Leader key: `Spacebar`
 #### Searching and replacing
 
 | Mode | Input           | Action                                                   |
-|:-----|:----------------|:---------------------------------------------------------|
+| :--- | :-------------- | :------------------------------------------------------- |
 | n    | `/pattern`      | Search forward for pattern                               |
 | n    | `?pattern`      | Search backward for pattern                              |
 | n    | `n`             | Go to next search match                                  |
@@ -555,22 +556,22 @@ Leader key: `Spacebar`
 
 #### Command line
 
-| Input         | Action                                         |
-| :------------ |:-----------------------------------------------|
-| :             | Command line mode                              |
-| `<leader> sC` | Commands                                       |
-| `<leader> :`  | Command history                                |
-| `<C-u>`       | Clear command line from cursor to beginning    |
-| `<C-w>`       | Delete word in front of the cursor             |
-| `<C-k>`       | Enter digraph                                  |
+| Input         | Action                                      |
+| :------------ | :------------------------------------------ |
+| :             | Command line mode                           |
+| `<leader> sC` | Commands                                    |
+| `<leader> :`  | Command history                             |
+| `<C-u>`       | Clear command line from cursor to beginning |
+| `<C-w>`       | Delete word in front of the cursor          |
+| `<C-k>`       | Enter digraph                               |
 
 ## Lazygit
 
 #### Navigation and Basic Operations
 
 | Input          | Action                            |
-|:---------------|:----------------------------------|
-| `q`            | Quit LazyGit                      |
+| :------------- | :-------------------------------- |
+| `q`            | Quit Lazygit                      |
 | `<Esc>`        | Cancel/go back                    |
 | `<Tab>`        | Switch between panels             |
 | `<Shift-Tab>`  | Switch between panels (reverse)   |
@@ -595,7 +596,7 @@ Leader key: `Spacebar`
 #### File Operations (Files Panel)
 
 | Input      | Action                           |
-| :--------- |:---------------------------------|
+| :--------- | :------------------------------- |
 | `<Space>`  | Stage/unstage file               |
 | `<Enter>`  | Stage lines / Collapse directory |
 | `a`        | Stage/unstage all files          |
@@ -628,7 +629,7 @@ Leader key: `Spacebar`
 #### Branch Operations (Branches Panel)
 
 | Input      | Action                             |
-|:-----------|:-----------------------------------|
+| :--------- | :--------------------------------- |
 | `<Space>`  | Checkout branch                    |
 | `c`        | Checkout branch by name            |
 | `-`        | Checkout previous branch           |
@@ -655,7 +656,7 @@ Leader key: `Spacebar`
 #### Commit History (Commits Panel)
 
 | Input      | Action                                         |
-|:-----------|:-----------------------------------------------|
+| :--------- | :--------------------------------------------- |
 | `<Space>`  | Checkout commit                                |
 | `<Enter>`  | View commit files                              |
 | `c`        | Copy commit hash                               |
@@ -705,7 +706,7 @@ Leader key: `Spacebar`
 #### Global Commands (Available from any panel)
 
 | Input      | Action                      |
-|:-----------|:----------------------------|
+| :--------- | :-------------------------- |
 | `<Ctrl-r>` | Recent repositories         |
 | `<Ctrl-s>` | View filter-by-path options |
 | `<Ctrl-w>` | Toggle ignore whitespace    |
