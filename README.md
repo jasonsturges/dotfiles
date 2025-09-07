@@ -565,37 +565,54 @@ Leader key: `Spacebar`
 
 ## Lazygit
 
-#### LazyGit Navigation and Basic Operations
+#### Navigation and Basic Operations
 
-| Input          | Action                          |
-| :------------- | :------------------------------ |
-| `q`            | Quit LazyGit                    |
-| `<Esc>`        | Cancel/go back                  |
-| `<Tab>`        | Switch between panels           |
-| `<Shift-Tab>`  | Switch between panels (reverse) |
-| `j` / `<Down>` | Move down in current panel      |
-| `k` / `<Up>`   | Move up in current panel        |
-| `<PageDown>`   | Move down 5 lines               |
-| `<PageUp>`     | Move up 5 lines                 |
-| `g`            | Go to top of panel              |
-| `G`            | Go to bottom of panel           |
-| `<Enter>`      | Confirm selection/open item     |
-| `?`            | Show help/keybindings           |
+| Input          | Action                            |
+|:---------------|:----------------------------------|
+| `q`            | Quit LazyGit                      |
+| `<Esc>`        | Cancel/go back                    |
+| `<Tab>`        | Switch between panels             |
+| `<Shift-Tab>`  | Switch between panels (reverse)   |
+| `j` / `<Down>` | Move down in current panel        |
+| `k` / `<Up>`   | Move up in current panel          |
+| `]`            | Next tab                          |
+| `[`            | Previous tab                      |
+| `,`            | Previous page                     |
+| `.`            | Next page                         |
+| `<`            | Scroll to top                     |
+| `>`            | Scroll to bottom                  |
+| `<Shift+Down>` | Range select down                 |
+| `<Shift+Up>`   | Range select up                   |
+| `<Enter>`      | Confirm selection/open item       |
+| `0`            | Focus main view                   |
+| `1`            | Go to files panel                 |
+| `2`            | Go to branches panel              |
+| `3`            | Go to commits panel               |
+| `4`            | Go to stash panel                 |
+| `5`            | Go to remote panel (if available) |
 
 #### File Operations (Files Panel)
 
 | Input      | Action                           |
-| :--------- | :------------------------------- |
+| :--------- |:---------------------------------|
 | `<Space>`  | Stage/unstage file               |
+| `<Enter>`  | Stage lines / Collapse directory |
 | `a`        | Stage/unstage all files          |
-| `d`        | View diff for selected file      |
-| `e`        | Edit file in default editor      |
-| `o`        | Open file in default application |
+| `d`        | Discard                          |
+| `D`        | Reset                            |
+| `g`        | View upstream reset options      |
+| `c`        | Commit                           |
+| `A`        | Ammend last commit               |
+| `e`        | Edit file                        |
+| `o`        | Open file                        |
 | `i`        | Add file to .gitignore           |
 | `r`        | Refresh files                    |
 | `s`        | Stash all changes                |
 | `S`        | View stash options               |
-| `<Ctrl-o>` | Copy file name to clipboard      |
+| `y`        | Copy to clipboard                |
+| `<Ctrl-o>` | Copy path to clipboard           |
+| `<Ctrl-b>` | Filter files by status           |
+| `<Ctrl-f>` | Find base commit for fixup       |
 | `D`        | View reset options for file      |
 
 #### Commit Operations
@@ -604,44 +621,69 @@ Leader key: `Spacebar`
 | :--------- | :--------------------------------------- |
 | `c`        | Commit staged changes                    |
 | `C`        | Commit using git editor                  |
+| `A`        | Ammend last commit                       |
 | `<Ctrl-c>` | Close commit message panel               |
 | `<Enter>`  | Confirm commit (in commit message panel) |
 
 #### Branch Operations (Branches Panel)
 
-| Input     | Action                  |
-| :-------- | :---------------------- |
-| `<Space>` | Checkout branch         |
-| `c`       | Checkout branch by name |
-| `F`       | Force checkout branch   |
-| `n`       | Create new branch       |
-| `d`       | Delete branch           |
-| `D`       | Force delete branch     |
-| `r`       | Rebase branch           |
-| `M`       | Merge branch            |
-| `f`       | Fast-forward branch     |
-| `g`       | View reset options      |
-| `R`       | Rename branch           |
-| `u`       | Set upstream branch     |
+| Input      | Action                             |
+|:-----------|:-----------------------------------|
+| `<Space>`  | Checkout branch                    |
+| `c`        | Checkout branch by name            |
+| `-`        | Checkout previous branch           |
+| `F`        | Force checkout branch              |
+| `n`        | Create new branch                  |
+| `d`        | Delete branch                      |
+| `D`        | Force delete branch                |
+| `r`        | Rebase branch                      |
+| `R`        | Rename branch                      |
+| `M`        | Merge branch                       |
+| `f`        | Fast-forward branch                |
+| `g`        | View reset options                 |
+| `R`        | Rename branch                      |
+| `u`        | Set upstream branch                |
+| `o`        | Create pull request                |
+| `O`        | Create pull request options...     |
+| `T`        | New tag                            |
+| `s`        | Sort order...                      |
+| `g`        | Reset                              |
+| `u`        | View upstream options...           |
+| `<Ctrl-y>` | Copy pull request URL to clipboard |
+| `<Ctrl-o>` | Copy branch name to clipboard      |
+| `<Enter>`  | View Commits                       |
 
 #### Commit History (Commits Panel)
 
-| Input      | Action                      |
-| :--------- | :-------------------------- |
-| `<Space>`  | Checkout commit             |
-| `d`        | View diff for commit        |
-| `<Enter>`  | View commit files           |
-| `c`        | Copy commit hash            |
-| `C`        | Copy commit message         |
-| `r`        | Reword commit               |
-| `R`        | Rebase from selected commit |
-| `f`        | Fixup commit                |
-| `F`        | Create fixup commit         |
-| `s`        | Squash commit               |
-| `D`        | Delete commit               |
-| `<Ctrl-r>` | Cherry-pick commit          |
-| `t`        | Revert commit               |
-| `T`        | Tag commit                  |
+| Input      | Action                                         |
+|:-----------|:-----------------------------------------------|
+| `<Space>`  | Checkout commit                                |
+| `<Enter>`  | View commit files                              |
+| `d`        | View diff for commit                           |
+| `c`        | Copy commit hash                               |
+| `C`        | Copy (cherry pick)                             |
+| `r`        | Reword commit                                  |
+| `R`        | Rebase with editor                             |
+| `e`        | Edit (start interactive rebase)                |
+| `f`        | Fixup commit                                   |
+| `F`        | Create fixup commit                            |
+| `S`        | Apply fixup commits...                         |
+| `s`        | Squash commit                                  |
+| `d`        | Drop commit                                    |
+| `D`        | Delete commit                                  |
+| `p`        | Pick (while rebasing)                          |
+| `B`        | Base as base commit for rebase                 |
+| `<Ctrl-r>` | Cherry-pick commit                             |
+| `<Ctrl-f>` | Reset copied (cherry-picked) commits selection |
+| `<Ctrl-o>` | Copy commit has to clipboard                   |
+| `<Ctrl-j>` | Move commit down one                           |
+| `<Ctrl-k>` | Move commit up one                             |
+| `<Ctrl-l>` | View log options...                            |
+| `t`        | Revert commit                                  |
+| `T`        | Tag commit                                     |
+| `b`        | View bisect options                            |
+| `n`        | Create new branch off of commit                |
+| `g`        | Reset...                                       |
 
 #### Stash Operations (Stash Panel)
 
@@ -665,17 +707,19 @@ Leader key: `Spacebar`
 #### Global Commands (Available from any panel)
 
 | Input      | Action                      |
-| :--------- | :-------------------------- |
+|:-----------|:----------------------------|
 | `<Ctrl-r>` | Recent repositories         |
 | `<Ctrl-s>` | View filter-by-path options |
+| `<Ctrl-w>` | Toggle ignore whitespace    |
 | `w`        | View worktree options       |
 | `z`        | Undo last action            |
 | `<Ctrl-z>` | Redo last action            |
 | `+`        | Next screen mode            |
 | `_`        | Previous screen mode        |
 | `:`        | Execute custom command      |
-| `m`        | View merge/rebase options   |
 | `R`        | Refresh all                 |
+| `}`        | Increase diff context size  |
+| `{`        | Decrease diff context size  |
 
 #### Search and Filter
 
