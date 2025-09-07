@@ -613,7 +613,6 @@ Leader key: `Spacebar`
 | `<Ctrl-o>` | Copy path to clipboard           |
 | `<Ctrl-b>` | Filter files by status           |
 | `<Ctrl-f>` | Find base commit for fixup       |
-| `D`        | View reset options for file      |
 
 #### Commit Operations
 
@@ -641,7 +640,6 @@ Leader key: `Spacebar`
 | `M`        | Merge branch                       |
 | `f`        | Fast-forward branch                |
 | `g`        | View reset options                 |
-| `R`        | Rename branch                      |
 | `u`        | Set upstream branch                |
 | `o`        | Create pull request                |
 | `O`        | Create pull request options...     |
@@ -659,7 +657,6 @@ Leader key: `Spacebar`
 |:-----------|:-----------------------------------------------|
 | `<Space>`  | Checkout commit                                |
 | `<Enter>`  | View commit files                              |
-| `d`        | View diff for commit                           |
 | `c`        | Copy commit hash                               |
 | `C`        | Copy (cherry pick)                             |
 | `r`        | Reword commit                                  |
