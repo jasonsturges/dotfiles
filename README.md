@@ -563,6 +563,129 @@ Leader key: `Spacebar`
 | `<C-w>`       | Delete word in front of the cursor             |
 | `<C-k>`       | Enter digraph                                  |
 
+## Lazygit
+
+#### LazyGit Navigation and Basic Operations
+
+| Input          | Action                          |
+| :------------- | :------------------------------ |
+| `q`            | Quit LazyGit                    |
+| `<Esc>`        | Cancel/go back                  |
+| `<Tab>`        | Switch between panels           |
+| `<Shift-Tab>`  | Switch between panels (reverse) |
+| `j` / `<Down>` | Move down in current panel      |
+| `k` / `<Up>`   | Move up in current panel        |
+| `<PageDown>`   | Move down 5 lines               |
+| `<PageUp>`     | Move up 5 lines                 |
+| `g`            | Go to top of panel              |
+| `G`            | Go to bottom of panel           |
+| `<Enter>`      | Confirm selection/open item     |
+| `?`            | Show help/keybindings           |
+
+#### File Operations (Files Panel)
+
+| Input      | Action                           |
+| :--------- | :------------------------------- |
+| `<Space>`  | Stage/unstage file               |
+| `a`        | Stage/unstage all files          |
+| `d`        | View diff for selected file      |
+| `e`        | Edit file in default editor      |
+| `o`        | Open file in default application |
+| `i`        | Add file to .gitignore           |
+| `r`        | Refresh files                    |
+| `s`        | Stash all changes                |
+| `S`        | View stash options               |
+| `<Ctrl-o>` | Copy file name to clipboard      |
+| `D`        | View reset options for file      |
+
+#### Commit Operations
+
+| Input      | Action                                   |
+| :--------- | :--------------------------------------- |
+| `c`        | Commit staged changes                    |
+| `C`        | Commit using git editor                  |
+| `<Ctrl-c>` | Close commit message panel               |
+| `<Enter>`  | Confirm commit (in commit message panel) |
+
+#### Branch Operations (Branches Panel)
+
+| Input     | Action                  |
+| :-------- | :---------------------- |
+| `<Space>` | Checkout branch         |
+| `c`       | Checkout branch by name |
+| `F`       | Force checkout branch   |
+| `n`       | Create new branch       |
+| `d`       | Delete branch           |
+| `D`       | Force delete branch     |
+| `r`       | Rebase branch           |
+| `M`       | Merge branch            |
+| `f`       | Fast-forward branch     |
+| `g`       | View reset options      |
+| `R`       | Rename branch           |
+| `u`       | Set upstream branch     |
+
+#### Commit History (Commits Panel)
+
+| Input      | Action                      |
+| :--------- | :-------------------------- |
+| `<Space>`  | Checkout commit             |
+| `d`        | View diff for commit        |
+| `<Enter>`  | View commit files           |
+| `c`        | Copy commit hash            |
+| `C`        | Copy commit message         |
+| `r`        | Reword commit               |
+| `R`        | Rebase from selected commit |
+| `f`        | Fixup commit                |
+| `F`        | Create fixup commit         |
+| `s`        | Squash commit               |
+| `D`        | Delete commit               |
+| `<Ctrl-r>` | Cherry-pick commit          |
+| `t`        | Revert commit               |
+| `T`        | Tag commit                  |
+
+#### Stash Operations (Stash Panel)
+
+| Input     | Action           |
+| :-------- | :--------------- |
+| `<Space>` | Apply stash      |
+| `g`       | Pop stash        |
+| `d`       | Drop stash       |
+| `n`       | Create new stash |
+| `r`       | Rename stash     |
+
+#### Remote Operations
+
+| Input      | Action            |
+| :--------- | :---------------- |
+| `p`        | Push to remote    |
+| `P`        | Pull from remote  |
+| `f`        | Fetch from remote |
+| `<Ctrl-p>` | Push with force   |
+
+#### Global Commands (Available from any panel)
+
+| Input      | Action                      |
+| :--------- | :-------------------------- |
+| `<Ctrl-r>` | Recent repositories         |
+| `<Ctrl-s>` | View filter-by-path options |
+| `w`        | View worktree options       |
+| `z`        | Undo last action            |
+| `<Ctrl-z>` | Redo last action            |
+| `+`        | Next screen mode            |
+| `_`        | Previous screen mode        |
+| `:`        | Execute custom command      |
+| `m`        | View merge/rebase options   |
+| `R`        | Refresh all                 |
+
+#### Search and Filter
+
+| Input   | Action                        |
+| :------ | :---------------------------- |
+| `/`     | Start search in current panel |
+| `<Esc>` | Clear search                  |
+| `n`     | Next search result            |
+| `N`     | Previous search result        |
+
 ## TMUX
 
 Configuration for TMUX, terminal multiplexer.
