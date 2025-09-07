@@ -413,7 +413,7 @@ Leader key: `Spacebar`
 #### Searching and replacing
 
 | Mode | Input           | Action                                                   |
-| :--- | :-------------- | :------------------------------------------------------- |
+|:-----|:----------------|:---------------------------------------------------------|
 | n    | `/pattern`      | Search forward for pattern                               |
 | n    | `?pattern`      | Search backward for pattern                              |
 | n    | `n`             | Go to next search match                                  |
@@ -423,7 +423,8 @@ Leader key: `Spacebar`
 | n    | `/<Enter>`      | Repeat last search                                       |
 | n    | `/<C-r><C-w>`   | Put word under cursor into search prompt                 |
 | n    | `:nohl`         | Clear search highlighting                                |
-| n    | `<leader> ff`   | Find files from root directory                           |
+| n    | `<C-u>`         | Clear search line from cursor to beginning               |
+| n    | `<leader> ff`   | Find files from root directory (also: `<leader><leader>` |
 | n    | `<leader> fF`   | Find files from current working directory                |
 | n    | `<leader> fr`   | Find recent files                                        |
 | n    | `<leader> fR`   | Find recent files (cwd)                                  |
@@ -555,11 +556,11 @@ Leader key: `Spacebar`
 #### Command line
 
 | Input         | Action                                         |
-| :------------ | :--------------------------------------------- |
+| :------------ |:-----------------------------------------------|
 | :             | Command line mode                              |
 | `<leader> sC` | Commands                                       |
 | `<leader> :`  | Command history                                |
-| `<C-u>`       | Remove all characters (clear the command line) |
+| `<C-u>`       | Clear command line from cursor to beginning    |
 | `<C-w>`       | Delete word in front of the cursor             |
 | `<C-k>`       | Enter digraph                                  |
 
