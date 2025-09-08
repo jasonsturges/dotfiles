@@ -239,6 +239,7 @@ Leader key: `Spacebar`
 | n    | `<leader> l`  | Lazy                                             |
 | n    | `<leader> cm` | Mason: Language servers, linters, and formatters |
 | n    | `<leader> e`  | Snacks Explorer: File system tree sidebar        |
+| n    | `<leader> cs` | Outline: Code outline                            |
 | n    | `<leader> gg` | Lazygit: Terminal UI for git commands            |
 | n    | `<leader> sr` | Ripgrep: Search and replace                      |
 | n    | `<leader> sn` | Noice: UI notifications and messages             |
