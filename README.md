@@ -230,7 +230,7 @@ Neovim key mapping, based on macOS.
 | `:set nowrap`         | Disable word wrap                                        |
 | `:set wrap!`          | Toggle word wrap on/off                                  |
 
-#### LazyVim and plugins
+#### Plugins
 
 Leader key: `Spacebar`
 
