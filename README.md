@@ -210,8 +210,8 @@ Neovim key mapping, based on macOS.
 | `:LazyExtras`         | Lazy extras                                              |
 | `:Mason`              | Open LSP/tool installer                                  |
 | `:LspInfo`            | Show LSP client information                              |
-| :TSInstallInfo        | All available Treesitter language parsers                |
-| :TSInstall lang       | Install Treesitter parser for a specific language        |
+| `:TSInstallInfo`      | All available Treesitter language parsers                |
+| `:TSInstall lang`     | Install Treesitter parser for a specific language        |
 | `:Telescope keymaps`  | Browse all keymaps in Telescope                          |
 | `:checkhealth`        | Run health checks for plugins/config                     |
 | `:messages`           | Show recent messages/errors                              |
