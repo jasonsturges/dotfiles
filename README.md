@@ -479,11 +479,13 @@ Leader key: `Spacebar`
 | :--- | :----------- | :-------------------------------------- |
 | n    | `<leader> e` | Neo-tree: Open file system tree sidebar |
 | n    | `<CR>`       | Open directory or file                  |
+| n    | `<C-v>`      | Open file in vertical split             |
+| n    | `<c-s>`      | Open file in horizontal split           |
+| n    | `<C-t>`      | Open terminal at path                   |
 | n    | `a`          | Add file                                |
 | n    | `d`          | Delete file                             |
 | n    | `P`          | Preview file                            |
 | n    | `H`          | Toggle hidden files                     |
-| n    | `?`          | Help                                    |
 
 #### Errors
 
