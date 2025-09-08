@@ -241,7 +241,7 @@ Leader key: `Spacebar`
 | n    | `<leader> e`  | Snacks Explorer: File system tree sidebar        |
 | n    | `<leader> gg` | Lazygit: Terminal UI for git commands            |
 | n    | `<leader> sr` | Ripgrep: Search and replace                      |
-| n    | `<leader> sn` | Noice                                            |
+| n    | `<leader> sn` | Noice: UI notifications and messages             |
 | n    | `<leader> sh` | Search Help                                      |
 | n    | `<leader> sk` | Search Keymaps                                   |
 | n    | `<leader> qq` | Quit all                                         |
