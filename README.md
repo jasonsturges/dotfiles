@@ -234,18 +234,20 @@ Neovim key mapping, based on macOS.
 
 Leader key: `Spacebar`
 
-| Mode | Input         | Action                                           |
-| :--- | :------------ | :----------------------------------------------- |
-| n    | `<leader> l`  | Lazy                                             |
-| n    | `<leader> cm` | Mason: Language servers, linters, and formatters |
-| n    | `<leader> e`  | Snacks Explorer: File system tree sidebar        |
-| n    | `<leader> cs` | Outline: Code outline                            |
-| n    | `<leader> gg` | Lazygit: Terminal UI for git commands            |
-| n    | `<leader> sr` | Ripgrep: Search and replace                      |
-| n    | `<leader> sn` | Noice: UI notifications and messages             |
-| n    | `<leader> sh` | Search Help                                      |
-| n    | `<leader> sk` | Search Keymaps                                   |
-| n    | `<leader> qq` | Quit all                                         |
+| Mode | Input         | Action                                                      |
+| :--- | :------------ | :---------------------------------------------------------- |
+| n    | `<leader> l`  | Lazy (`:Lazy`)                                              |
+| n    | `<leader> cm` | Mason: Language servers, linters, and formatters (`:Mason`) |
+| n    | `<leader> e`  | Snacks Explorer: File system tree sidebar                   |
+| n    | `<leader> ff` | Snacks Picker: Find files                                   |
+| n    | `<leader> cs` | Outline: Code outline (`:Outline`)                          |
+| n    | `<leader> gg` | Lazygit: Terminal UI for git commands (`:LazyGit`)          |
+| n    | `<leader> ft` | Snacks Terminal: Toggle terminal                            |
+| n    | `<leader> sr` | Ripgrep: Search and replace                                 |
+| n    | `<leader> sn` | Noice: UI notifications and messages                        |
+| n    | `<leader> sh` | Search Help                                                 |
+| n    | `<leader> sk` | Search Keymaps                                              |
+| n    | `<leader> qq` | Quit all                                                    |
 
 #### Windows
 
