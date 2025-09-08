@@ -238,10 +238,9 @@ Leader key: `Spacebar`
 | :--- | :------------ | :----------------------------------------------- |
 | n    | `<leader> l`  | Lazy                                             |
 | n    | `<leader> cm` | Mason: Language servers, linters, and formatters |
-| n    | `<leader> e`  | Neo-tree: File system tree sidebar               |
+| n    | `<leader> e`  | Snacks Explorer: File system tree sidebar        |
 | n    | `<leader> gg` | Lazygit: Terminal UI for git commands            |
-| n    | `<leader> cs` | Aerial: Code outline                             |
-| n    | `<leader> sr` | Spectre: Search and replace                      |
+| n    | `<leader> sr` | Ripgrep: Search and replace                      |
 | n    | `<leader> sn` | Noice                                            |
 | n    | `<leader> sh` | Search Help                                      |
 | n    | `<leader> sk` | Search Keymaps                                   |
@@ -473,19 +472,19 @@ Leader key: `Spacebar`
 | n    | `zr`  | Reduce folding                   |
 | n    | `zR`  | Open all folds                   |
 
-#### File Explorer: Neo-tree
+#### File Explorer: Snacks Explorer
 
-| Mode | Input        | Action                                  |
-| :--- | :----------- | :-------------------------------------- |
-| n    | `<leader> e` | Neo-tree: Open file system tree sidebar |
-| n    | `<CR>`       | Open directory or file                  |
-| n    | `<C-v>`      | Open file in vertical split             |
-| n    | `<c-s>`      | Open file in horizontal split           |
-| n    | `<C-t>`      | Open terminal at path                   |
-| n    | `a`          | Add file                                |
-| n    | `d`          | Delete file                             |
-| n    | `P`          | Preview file                            |
-| n    | `H`          | Toggle hidden files                     |
+| Mode | Input        | Action                        |
+| :--- | :----------- | :---------------------------- |
+| n    | `<leader> e` | Open file system tree sidebar |
+| n    | `<CR>`       | Open directory or file        |
+| n    | `<C-v>`      | Open file in vertical split   |
+| n    | `<c-s>`      | Open file in horizontal split |
+| n    | `<C-t>`      | Open terminal at path         |
+| n    | `a`          | Add file                      |
+| n    | `d`          | Delete file                   |
+| n    | `P`          | Preview file                  |
+| n    | `H`          | Toggle hidden files           |
 
 #### Errors
 
