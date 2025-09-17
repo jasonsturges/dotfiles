@@ -154,6 +154,12 @@ Install [lazygit](https://github.com/jesseduffield/lazygit):
 brew install lazygit
 ```
 
+Install tree-sitter-cli:
+
+```shell
+brew install tree-sitter-cli
+```
+
 Install [ripgrep](https://github.com/BurntSushi/ripgrep) (used for live grep):
 
 ```shell
