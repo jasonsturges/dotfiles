@@ -16,7 +16,7 @@ A simple Bash script to manage macOS configuration files using Git and symlinks.
 - [Troubleshooting](#troubleshooting)
 - [Environment](#environment)
 - [Neovim](#neovim)
-- [Lazygit](#Lazygit)
+- [Lazygit](#lazygit)
 - [TMUX](#tmux)
 
 ## Overview
@@ -547,8 +547,8 @@ Leader key: `Spacebar`
 | :--- | :------------ | :------------------ |
 | n    | `<leader> ft` | Terminal (root dir) |
 | n    | `<leader> fT` | Terminal (cwd)      |
-| n    | `<C-\> <C-n>` | Exit terminal       |
 | n    | `<C-/>`       | Toggle terminal     |
+| t    | `<C-\> <C-n>` | Exit terminal       |
 | t    | `<esc><esc>`  | Enter normal mode   |
 
 #### Package Info
