@@ -201,40 +201,45 @@ Neovim key mapping, based on macOS.
 
 #### Commands
 
-| Command               | Description                                              |
-| :-------------------- | :------------------------------------------------------- |
-| `:map`                | Show all key mappings for all modes                      |
-| `:map <key>`          | Show mapping for specific key (e.g. `:map <leader>xt`)   |
-| `:nmap`               | Show normal mode mappings only (e.g. `:nmap <leader>gg`) |
-| `:imap`               | Show insert mode mappings only                           |
-| `:vmap`               | Show visual mode mappings only                           |
-| `:verbose map <key>`  | Show mapping with source file location                   |
-| `:help`               | Open help system                                         |
-| `:help <topic>`       | Get help on specific topic                               |
-| `:WhichKey`           | Show available keybindings (LazyVim)                     |
-| `:Lazy`               | Open plugin manager                                      |
-| `:LazyExtras`         | Lazy extras                                              |
-| `:Mason`              | Open LSP/tool installer                                  |
-| `:LspInfo`            | Show LSP client information                              |
-| `:TSInstallInfo`      | All available Treesitter language parsers                |
-| `:TSInstall lang`     | Install Treesitter parser for a specific language        |
-| `:Telescope keymaps`  | Browse all keymaps in Telescope                          |
-| `:checkhealth`        | Run health checks for plugins/config                     |
-| `:messages`           | Show recent messages/errors                              |
-| `:pwd`                | Show current working directory                           |
-| `:cd <path>`          | Change working directory                                 |
-| `:e <file>`           | Edit/open file                                           |
-| `:w`                  | Write/save current file                                  |
-| `:q`                  | Quit current window                                      |
-| `:qa`                 | Quit all windows                                         |
-| `:wq`                 | Write and quit                                           |
-| `:terminal`           | Open terminal in current window                          |
-| `:split \| terminal`  | Open terminal in horizontal split                        |
-| `:vsplit \| terminal` | Open terminal in vertical split                          |
-| `:tabnew \| terminal` | Open terminal in new tab                                 |
-| `:set wrap`           | Enable word wrap                                         |
-| `:set nowrap`         | Disable word wrap                                        |
-| `:set wrap!`          | Toggle word wrap on/off                                  |
+| Command                      | Description                                                                    |
+| :--------------------------- | :----------------------------------------------------------------------------- |
+| `:map`                       | Show all key mappings for all modes                                            |
+| `:map <key>`                 | Show mapping for specific key (e.g. `:map <leader>xt`)                         |
+| `:nmap`                      | Show normal mode mappings only (e.g. `:nmap <leader>gg`)                       |
+| `:imap`                      | Show insert mode mappings only                                                 |
+| `:vmap`                      | Show visual mode mappings only                                                 |
+| `:verbose map <key>`         | Show mapping with source file location                                         |
+| `:help`                      | Open help system                                                               |
+| `:help <topic>`              | Get help on specific topic                                                     |
+| `:WhichKey`                  | Show available keybindings (LazyVim)                                           |
+| `:Lazy`                      | Open plugin manager                                                            |
+| `:LazyExtras`                | Lazy extras                                                                    |
+| `:Mason`                     | Open LSP/tool installer                                                        |
+| `:LspInfo`                   | Show LSP client information                                                    |
+| `:TSInstallInfo`             | All available Treesitter language parsers                                      |
+| `:TSInstall lang`            | Install Treesitter parser for a specific language                              |
+| `:Telescope keymaps`         | Browse all keymaps in Telescope                                                |
+| `:checkhealth`               | Run health checks for plugins/config                                           |
+| `:messages`                  | Show recent messages/errors                                                    |
+| `:pwd`                       | Show current working directory                                                 |
+| `:cd <path>`                 | Change working directory                                                       |
+| `:e <file>`                  | Edit/open file                                                                 |
+| `:w`                         | Write/save current file                                                        |
+| `:q`                         | Quit current window                                                            |
+| `:qa`                        | Quit all windows                                                               |
+| `:wq`                        | Write and quit                                                                 |
+| `:terminal`                  | Open terminal in current window                                                |
+| `:split \| terminal`         | Open terminal in horizontal split                                              |
+| `:vsplit \| terminal`        | Open terminal in vertical split                                                |
+| `:tabnew \| terminal`        | Open terminal in new tab                                                       |
+| `:ls!`                       | List all buffers, including unlisted ones like `term://` (shows buffer number) |
+| `:buffer <number>`           | Open buffer `<number>` in the current window, replacing its content            |
+| `:sbuffer <number>`          | Open buffer `<number>` in a new horizontal split (like original plugin split)  |
+| `:vsplit \| buffer <number>` | Open buffer `<number>` in a new vertical split                                 |
+| `:bdelete <number>`          | Delete buffer `<number>`, terminating any running terminal job                 |
+| `:set wrap`                  | Enable word wrap                                                               |
+| `:set nowrap`                | Disable word wrap                                                              |
+| `:set wrap!`                 | Toggle word wrap on/off                                                        |
 
 #### Plugins
 
@@ -548,8 +553,9 @@ Leader key: `Spacebar`
 | n    | `<leader> ft` | Terminal (root dir) |
 | n    | `<leader> fT` | Terminal (cwd)      |
 | n    | `<C-/>`       | Toggle terminal     |
-| t    | `<C-\> <C-n>` | Exit terminal       |
+| t    | `<C-\> <C-n>` | Exit terminal mode  |
 | t    | `<esc><esc>`  | Enter normal mode   |
+| t    | `<C-c>`       | Send SIGINT         |
 
 #### Package Info
 
