@@ -497,6 +497,11 @@ Leader key: `Spacebar`
 | n    | `<C-t>`      | Open terminal at path         |
 | n    | `a`          | Add file                      |
 | n    | `d`          | Delete file                   |
+| n    | `r`          | Rename file                   |
+| n    | `c`          | Copy file                     |
+| n    | `p`          | Paste file                    |
+| n    | `x`          | Move (cut)                    |
+| n    | `y`          | Yank path                     |
 | n    | `P`          | Preview file                  |
 | n    | `H`          | Toggle hidden files           |
 
