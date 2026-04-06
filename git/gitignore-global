@@ -21,3 +21,6 @@ Thumbs.db
 CLAUDE.md
 .claude-*
 
+# MCP
+.mcp.json
+
