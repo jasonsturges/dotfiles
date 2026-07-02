@@ -21,6 +21,19 @@ Thumbs.db
 CLAUDE.md
 .claude-*
 
+# Grok Build / xAI agent files
+# Instruction files (these are the main ones to watch out for)
+AGENTS.md
+Agents.md
+AGENT.md
+# Session/planning artifacts
+plan.md
+grok-plan*.md
+# Config directories
+.grok/
+agents/          # common local skills/commands dir
+~/.agents/       # global/user-level (if you ever commit from home, but usually safe)
+
 # MCP
 .mcp.json
 
