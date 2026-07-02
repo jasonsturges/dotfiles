@@ -2,9 +2,9 @@
 ## Directory-based project format
 .idea/
 ## File-based project format
-_.ipr
-_.iws
-\*.iml
+*.ipr
+*.iws
+*.iml
 
 # Visual Studio Code
 .vscode/
