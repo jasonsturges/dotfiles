@@ -40,6 +40,10 @@ GEMINI.md        # Default core instruction/context file
 .geminiignore    # File visibility exclusions specific to Gemini CLI
 .aiexclude       # Context exclusions for Gemini Code Assist IDE tools
 
+# OpenAI Codex — local-only configuration
+.codex/
+.agents/
+
 # MCP
 .mcp.json
 
