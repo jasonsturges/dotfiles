@@ -34,6 +34,12 @@ grok-plan*.md
 agents/          # common local skills/commands dir
 ~/.agents/       # global/user-level (if you ever commit from home, but usually safe)
 
+# Gemini CLI / Code Assist agent files
+.gemini/         # Project-specific settings, sandboxes, and commands
+GEMINI.md        # Default core instruction/context file
+.geminiignore    # File visibility exclusions specific to Gemini CLI
+.aiexclude       # Context exclusions for Gemini Code Assist IDE tools
+
 # MCP
 .mcp.json
 
